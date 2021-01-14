@@ -1,0 +1,2480 @@
+
+--Enregistré les données dans la base de données en fonction de date et l'heurs a laquelle elle a été posté
+--Gerer la page detail losque on cli sur on objet on voir les detail
+--Rechercher c'est a dire mettre le  lien qui nous ramener vers la liste des pages
+--Preciser si un objet si on veut une recompanse d'un objet
+--Dois d'abord commencé par modifier login le matin dès que j'arrive au campus
+--Merde le prof pense que on doit faire comment par rapport au theme de recherche qu'il nous a données merde l'ecole n'es pas facile
+--La dernière chose a faire le matin es de lire le tutoriel qui par de angular5 que j'ai commencer.
+--Téléccharger le livre de openclassroom sur le c++ et le c#
+--La journee d'aujourd'hui je dois télechaeger intelljIDEA et chercher un template pour le projet de ivan ,essaye d'adapter le template de notre projet au format de ionic
+--Appeler l'encadreur demain a 8h30
+download the ledge film
+--Gestion du button deconnection
+--Obliger de ce loge d'abord avant de éffectuer n'importe quoi sur l'application
+--Aujourd'hui on a vue beaucoup d'avantage sur les applications
+--Astus pour télécharger n'import qu'il film graduitement est il suffit de taper sur la barre de url de notre navigateur /index of/nomDuFilm
+--Télécharger le livre de pere riche
+--Je me suis arreter a 23min sur le dernier module de formation
+--Concenant le projet de archdenoe j'ai commence a intergrer le template dans le programme mais bugge pour le moment suis un peu fatigue je continue demain
+--Quel la difference entre seco pro et seco general
+--Il est vrai que les enfants m'ont deconcentrer ce matin. mais cet que je dois faire cette journée est de essaye de creer
+ mes propre page au lieu de laisser le CLI de angular generer a ma place. je pris que sa prend c'est que je suis mort 
+--Demain je dois téléchargé destination final le film tout les episode qui existe
+--Apprendre a programmer avec eclipse
+
+
+
+--*************************************************************** Mon resume pour cequi est de la premier partit apprendre a programmer en java
+--Les racourcie sur eclipse
+
+*ALT+SHIFT+N nouveau project eclipse
+*CTRL+S :enregistrer le fichier où l'on est  positionné;
+*CTRL+SHIFT+S :tout sauvegarder;
+*CTRL+W:fermer le fichier où l'on est positionné;
+*CTRL+SHIFT+W  :fermer tous les fichiers ouverts.
+
+--Vous pouvez donc ouvrire l'inviter de commande en se
+ positionnant dans le repertoire souhaiter en utilisant le racourcie windowns+R et 
+en suis ecrire cmd dans l'espace qui dois s'afficher.
+
+--Procedure pour compiler en java en utilisant l'inviter de commande
+*La première des chose a faire es de configurer la variable d'environnement de ton jdk
+*Une fois la configuration effectuer se positionner a l'interieure du dossier contenant ton ton fichier .java
+*Ouvrir l'invite de commande dans ce dossier
+*Puis exercuter la commande suis javac nomFichier.java 
+// ceci doit nous permettre de compiler notre projet pour generer le fichier monFichier.class . 
+//Ce fichier .class contient de byte code de notre programme qui n'est rien d'autre que le code s//ource de notre programme 
+//ecrire en un autre langage comprehensible comprehensible par la JVM(java virtuel marchine qui n'est rien d'autre qu'un langage que le langaga machine comprend facilement)  
+*si a la fin aucune erreur ne c'est produire , il nous suffit d'exercuter la commande java monFichier
+  
+
+donc sur la premiere parti de ce cours on peut dire que 
+--JVM(Java Virtual Machine) est le coeur de la programmation java
+--(JVM)elle fait fonctionner nos programme java precompiler en byte code
+--Les fichier precompiler correspondant a notre code source on l'extension .class
+--Le byte code en comme un intermediare entre le byte code et le langage machine(lagage que la machine comprend)
+--Je programme java precompiler en byte code( .class) peut etre exercuter sur tous les environnement de travail(windows, mac OS, Linux)
+--Votre machine ne peut pas comprendre le byte code elle a besoin du JVM
+--Tous les programme java sont compose de au moins une class
+--Le point de depart de tous les programme java est la methode public static void main(String[] args)
+-On affiche les programme java dans la console grace a la  methode System.out.println()  qui nous permet d'afficher avec un retour chariot 
+--et System.out.print() qui nous permet d'afficher sant retour chariot. 
+--Dans cette instruction, 
+*System ceci correspond a l'appel d'une classe normer System    
+*out est un objet  de la classe System qui  gère la sortie standard.
+*print() est une methode  qui permet d'afficher les element. 
+ 
+
+ ***************************************************************************Fin de la premiere partit apprendre a programmer avec java
+ 
+
+ ***************************************************************************Debut de la parti deux ************************************
+ --variable
+*en java il existe deux type de variable a savoir les variable de type simple ou primitif et les variable de type complexe ou des objets
+nb:1byte=1octet,short=2octets,int=4octets,long=8octet,float=4octets(compqtible avec les entier flottant ie avec la viugule)
+(enfin d'informer la machine que le type utiliser est long nous devons presicer un 'L' a la fin  de chaque caractere
+ 
+*ce qu'il faut retenir sur les variable en java
+--Les  variables  sont  essentielles  dans  la construction de programmes  informatiques .
+On affecte une valeur dans  une variable avec l ' opérateur égal  (« = »).
+Après  avoir affecté une valeur à une variable, l ' instruction doit  se terminer par un point-virgule (« ;  »).
+Vos  noms  de variables  ne doivent  contenir ni caractères  accentués  ni  espaces  et  doivent , dans  la mesure du possible,
+respecter la convention de nommage Java.
+Lorsque vous  effectuez  des  opérations  sur des  variables , prenez  garde à leur type :  vous  pourriez  perdre en précision.
+Vous  pouvez  caster un résultat  en ajoutant  un type devant  celui -ci  :  (int), (double), etc.
+Prenez  garde aux  priorités  lors que vous  castez le résultat  d' opérations , faute de quoi  ce dernier risque d' être incorrect.
+
+nb: les package importer automatique par java se trouve dans la class java.lang on peut site les objet String, System... . 
+un package est tout simplement un ensemble de classe utile.
+
+
+*********************************************************en resume
+*la lecture des entrer clavier se fait via l'objet scanner
+*l'objet Scanner se trouve dans le package java.util que l'on importe
+pour pouvoir recuperer ce que nous tapons dans la console nous devont intialiser Scanner et l'entrer standard System.in
+ex: Scanner test = new Scanner();
+    System.out.println("saisisez votre premier entier");
+	int monEntier =test.nextInt();
+
+
+*****************************************************************chose 	a retenir dans les debut de la programmation orienter objets
+*Une classe permet  de définir des  objets. Ceux-ci  ont  des  attributs  (variables  d'instance) et des  méthodes  (méthodes dinstance + accesseurs).	
+*Les  objets  permettent  d'encapsuler du code et  des  données.
+*Le ou les  constructeurs  d'une classe doivent  porter le même nom  que la classe et  n' ont  pas  de type de retour
+*L'ordre des  paramètres  passés  dans  le constructeur doit  être respecté
+*Il  est  recommandé de déclarer ses  variables  d'intance private, pour les  protéger d'une mauvaise utilisation par le
+programmeur.
+*On crée des accesseurs  et  mutateurs  (mét hodes  getters  et  setters ) pour permettre une modifications sûre des  variables d'instance
+*Dans  une classe, on accède aux  variables  de celle-ci  grâce au mot  clé this.
+*Une variable de classe est  une variable devant  être déclarée static.
+*Les  méthodes  n'utilisant  que des  variables  de classe doivent  elles  aussi  être déclarées  static.
+*On instancie un nouvel  objet  grâce au mot  clé new
+*contrairement au c++ java ne gere pas la notion de heritage multiple
+
+
+************************************************************************2eme partie de la programmation orienter objects
+*****les element que nous devons retenir sont les suivants 
+*Une classe hérite d'une autre classe par le biais  du mot  clé extends
+*Une classe ne peut herité que de une seul classe
+*Si aucun constructeur n'es definir dans la classe fille la JVM creera automatiquement un constructeur dans ces classe fille
+*Les classe fille herite de toute les proprieté public et protected de ces classe mère
+*Les methodes et les proprietés private d'une classe mère ne sont pas accessible par ces classes filles 
+*On peut redefinir une methode hérité c'est a dire que on peut changer tous sont code
+*On utiliser les conportement d'une classe mère par le biais du mot clé super
+*Grace a l'heritage et au polymorphisme nous pouvons utiliser la covariance des variables
+*On ne peut pas hérité d'une classe déclarer final
+*Une methode d'eclarer final n'est pas redefinissable
+*nb: une methode ou une variable sera declarer protected lorsque elle doit etre proteger par les getters et setters 
+et on ne peut pas avoir accès au données de cette classe depuis l'exterieurs  , ces classe fille peuvent hérité des données de cette classe
+
+
+****************************************************3eme modelisation de notre devoir pour une approche UML
+***Le logiciel qui sera utiliser ici est  argoUML autre logiciel que nous pouvons utiliser sont :boUML,Together,poseidon,Pyut...etc
+**Une classe déclarer public est visible meme a l'exterieux de sont package alors tous 
+**Les autre classe ne sont visible que a l'interieux du package dans lequelle il se trouve exemple
+// public class Ville est visible mème a l'exterieux de sont package alors que class Ville n'est visible que a l'interieux du package dans lequelle il se trouve
+//dans ce cas on va dire que leur porter est default
+
+rmq:
+**Un package est un ensemble de dossier et sous-dossier
+**Le nom d'un package est soumis a une convention de nommage
+**Si nous voulons utiliser un mots clé dans le nom de notre package nous devons lui fait suivre d'un underscore
+**Les classe déclarer public  sont visible depuis l'exterieux du package qui leur contient
+**Les classe qui ne sont pas déclarer public ne sont pas visible depuis l'exterieux du package
+**Si une classe déclarer public dans sont package a une variable de type default, cette dernière nee pourra etre déclarer depuis l'exterieurs du programmme
+
+
+************************************************4eme classe abstraire et interface
+rmq:
+**Les class abstrait ne sont pas intanciable 
+**La declaration d'une classe abstraire commence par le mots clé abstract
+**Le class abstraire permettent de definir des methodes abstraire et la particularité des methodes abstraire est que elle n'ont pas de corps
+
+exemple de methode abstraire :abstract void manger()
+nb:Ce type de classe est utiliser lorsqu'on se trouve dans un cas ou plusieurs classe fille hérite d'une classe mère
+
+
+********************************************pour commencer a coder en utilisant react , il faut d'abord
+-- installer nodejs
+--une fois node installer il suffit aussi de installer le gestion des package npm/yarn en utilisant la commande npm i -g npm@last
+--ceci etant fait il nous suffit maintenant de creer notre premier projet react en utilisant la commande creat-react-app myApp
+
+lien pour la gestion des evenement en React:frontarm.com/james-k-nelson/react-events-cheatsheet/
+
+
+
+************************************API AVEC REACT
+
+--il ya la clé api que je doit télécharger en lien dans food2book
+-- pour avoir la clé d'api il faut ce rendre a l'adresses suivante
+https://www.food2fork.com/about/api
+--l'autre url est ecrire apres 1.31.42
+
+*******************************Application games avec react js
+pour commencers
+1- create Store
+2- Apply Middlewares
+3-Provider
+3-intergrer le router a notre aplication en utilisant la commande 
+npm install react-router@next
+
+*************************************application de chat avec ionic 4
+pour la configuration de firebase,
+1-active le service d'authentification de firebase
+2-mettre les credentials dans mon app module
+3-exercuter la comande suivant:
+ npm install angularfire2 firebase promise-polyfill --save
+4-import les outils de la base de donnée dans le appModule
+ces outils sont les suivants
+-- rechercher angular firebase pour avoir les information sur angularfire2/angulqr
+--exercuter: npm install angularfire2 firebase promise-polyfill --save
+
+importer dans app modules les imports suivant:
+
+import {AngularFireModule} from 'angularfire2';
+import {AngularFireDatabaseModule,AngularFireDatabase} from 'angularfire2/database';
+import{AngularFireAuthModule} from 'angularfire2/Auth';
+
+
+mettre ceci parmis les import de notre appModule
+
+AngularFireModule.initializeApp(config),
+AngularFireDatabaseModule,
+AngularFireAuthModule
+
+mettre ceci parmi les provider
+AngularFireDatabase
+
+--En suite installer et configurer le plugin Camera & DatePicker
+--creer votre premier page qui sera la page login en exercutant : ionic g page login
+--creer la deuxieme page qui va nous permettre de enregistrer un nouvelle utilisateur:ionic g page register
+--creer la page pour renouvelle le mot de passe : ionic g page reset-password
+--generer la page de discution: ionic g page chat
+--generer la page du group:ionic g page group
+--generer la page des parametre :ionic g page settings
+
+************************************pour le nouveau test des appliacation les credential sont a mettre dans 
+envivironement
+
+***************react
+je rerient : les props(propriete) sont utilise en react pour afficher les données d'un composant parent vers un composant enfant
+les states en react vont nous permettre de gerer les etats des element c'est a dire les element telque le changement
+et les mise a jour
+
+*****************************************c'est quoi la blockchain.
+la blockchain est une technologie permettant d'obtenir le stockage des données numerique.
+--c'est données sont stocker de facon perenne dans le temps de facon a ce que ces données sont toujour present apres 
+plusieurs années temps la blockchain existe.
+--c'est données sont infalsifiable c'est a dire elle ne peuvent pas etre modifier.
+--c'est données sont stocker dans une architechture distribué
+
+--les fonction fe harchage  est l'outil principale qui permet de tous faire
+fonction dans une blockchain car sans utilité la blockchain est n'a pas d'importance
+ 
+--avantage d'utiliser la blockchain
+*la blockchain pourrait permettre de réduire de 15 à 20 miliards de dollars par an les couts d'infrastructure des 
+banque liés aux paiements internationaux à la sécurité des transactions et à la 
+compiliance réglementaire d'ici 2022 par exemple a l'epoque c'etait très couteux pour les banque d'utiliser une architecture centraliser pour stocker 
+les informations et  se rasurer que les informations perenne, infalsiviable. mais l'un des problème les plus recontrer etait que s'il arrivait que un tiese
+utilisateur modifiait s'attaquait a l'infrastructure alors tout le système etait atteint raison pour laquelle l'utilisation des blockchain es tres important car dans sa philosophie , 
+l'architecture est distribué et chaque utilisateur stocke les informations dans un registre qui doit contenir les meme information que d'autre registre.   
+*la philosophie de la blockchain permet de se passer d'interlocuteur du genre que on n'a pluys besoin d'une structure centralisé pour s'echanger les informations.
+
+
+
+--****TOP 5: Meilleurs Papiers sur la Blockchain dans la Santé
+
+
+La Blockchain est la nouvelle technologie dont tout le monde parle. Cependant, beaucoup ne comprennent pas ce que cest, comment cela fonctionne et comment elle peut être utilisée. 
+La Blockchain et sa première application, le Bitcoin, sont devenus très populaires dans le secteur financier, avec de nombreuses banques internationales qui investissent dans cette technologie. 
+Mais ses applications ne se limitent pas à la finance et à la banque.
+Un autre secteur qui pourrait bénéficier de la Blockchain est la santé.
+
+Le système de santé doit évoluer et innover. 
+Malgré de grands progrès dans lapproche thérapeutique avec de nouveaux médicaments en développement tous les ans,
+celui-ci manque de fluidité, de modernité et defficacité.
+
+
+Aujourdhui, il est encore difficile dassurer la traçabilité complète des medicaments. 
+Les médecins commettent des erreurs médicales parce quils nont pas accès à temps au dossier médical complet dun patient. 
+Les données des essais cliniques sont difficiles à obtenir et à partager. La Blockchain pourrait être le levier de changement dans le système de santé.
+ Voici un TOP 5 des meilleurs articles sur les applications possibles de la technologie Blockchain dans lindustrie de la santé:
+ 
+1*Blockchain: Opportunities for Health Care  Deloitte
+
+Authors: RJ Krawiec, Dan Housman, Mark White, Mariya Filipova, Florian Quarre, Dan Barr, Allen Nesbitt, Kate Fedosova,
+Jason Killmeyer, Adam Israël, Lindsay Tsai.
+
+
+Cet article présente clairement dans quelles circonstances la technologie Blockchain 
+peut être utilisée et comment elle peut être implémentée dans le système de santé. Il montre comment les patients, 
+les professionnels de santé ou les établissements de soins peuvent collaborer en utilisant cette technologie.
+
+
+/Interopérabilité à léchelle nationale
+/Accès aux dossiers médicaux
+/Médecine personnalisée
+/Contrats intelligents
+/Identité digitale des patients
+
+
+«Bien que la technologie blockchain ne soit pas une panacée pour 
+la normalisation des données ou les défis dintégration des systèmes, 
+elle offre un nouveau cadre prometteur pour amplifier et soutenir lintégration 
+des informations de santé à travers une gamme dutilisations et de parties prenantes. 
+Elle sadresse à plusieurs problématiques existantes et permet un système plus efficace, sans intermédiaires et sécurisé. »
+
+
+2**Co-Creation of Trust for Healthcare: The Cryptocitizen Framework for Interoperability with Blockchain
+
+Auteurs: Peter B. Nichol & Jeff Brandt
+Grâce à des exemples de la vie quotidienne dun patient, ce document explore limportance de 
+linteropérabilité quand il sagit de données de santé et 
+explique comment la blockchain peut résoudre certains problèmes de la communauté médicale.
+
+/Les soins de santé centrés sur la personne
+/Interopérabilité
+/Contrats intelligents
+/Identité souveraine
+/Dossiers de santé électroniques
+
+«Lidentité auto-souveraine est guidée par le principe selon lequel chaque patient 
+est la source et donc le propriétaire de sa propre identité.
+ Ce nest pas un contrôle administratif qui peut être loué, 
+ prêté ou vendu. Limmutabilité de la blockchain endurcit les données au fil du temps, 
+pour offrir un enregistrement canonique des données sur la santé. »
+
+
+3***Blockchain: The Chain of Trust and its Potential to Transform Healthcare  Our Point of View
+Auteurs: IBM  IBM Global Business Services Public Sector Team
+
+Cet article fournit une grande analyse des problématiques de lindustrie de la santé et 
+explique comment la blockchain peut les résoudre. Il fournit également des études de cas concrètes
+ pour illustrer les applications possibles de cette technologie.
+ 
+/Interopérabilité
+/Infrastructure de paiement préautorisé
+/Prévention et détection des médicaments de contrefaçon
+/Résultats des essais cliniques
+/IoT
+
+«Bien que le consensus technique sur un registre distribué pour les données 
+de santé nait pas encore émergé, avec des débats sur lévolution,
+ la sécurité et la conformité réglementaire, la technologie blockchain et 
+le cryptage stimuleront linnovation dans les services de santé et ladministration. »
+
+4****Blockchain For Health Data and its Potential Use in Health IT and Health Care Related Research
+
+Auteurs: Laure A. Linn et Martha B. Koo, M.D.
+
+Cet article explique concrètement comment les données de santé dun patient peuvent 
+être stockées et gérées à travers la blockchain et les Data Lakes. 
+Il analyse également comment les professionnels de santé et
+les organisations peuvent accéder à ces données et utiliser la data.
+
+/Blockchain publique
+/Contrôle de laccès
+/Data Lake
+/Requêtes de données, analyse et Machine Learning
+/IoT
+
+«Linformation contenue dans notre blockchain de santé serait sous forme dindex,
+ une liste de tous les dossiers de santé de lutilisateur et des données sur sa santé.
+ Lindex est similaire à un catalogue de livres dans une bibliothèque. 
+ Le catalogue de livres contient des métadonnées sur le livre et un emplacement 
+ où le livre peut être trouvé.
+
+5*****MedRec: Medical Data Management on the Blockchain
+Auteurs: A. Ekblaw, A. Azaria, T. Vieira & A. Lippman
+
+MedRec utilise la blockchain et les contrats intelligents (smart contracts) 
+pour créer une plateforme de gestion des données pour les dossiers médicaux du patient et 
+la communauté médicale. Cette étude propose également un nouveau 
+modèle économique où les mineurs du système seraient récompensés en data plutôt quen monnaie. 
+La blockchain de santé fonctionnerait de la même manière. »
+
+/Contrats intelligents
+/Blockchain Ethereum
+/Références à des données médicales disparates
+/Données immuables
+/Interface utilisateur flexible
+
+
+***********************************project cc 
+lutter contre les faux medicament avec la blockchain
+la confiance est la pierre angulaire de la profession médicale . lorsque nous tombons malades nous pensons que les médécins ont à coeur nos mailleurs interet .
+nous esperons que les médicament qui nous sont prescrits et que nous achetons nous amélioreront au lieu d'aggraver
+notre état . et en gros ils le font .
+ce pendant ce n'est pas toujours le cas . la contrefacon de médicaments eest un problème mondial qui a eu des conséquences
+nefastes sur des centaines de milliers de personnes dans le monde, en particulier dans les pays en dévéloppement
+qui ne disposent ni structures de reglémentation ni d'application strictes. les differents rapports sur les produits
+médicaux  contrefaits indiquent que la chine et l'inde sont les principaux producteurs de produits médicaux
+contrefaits.
+une cahine d'approvisionnement phamaceutique mondiale plus transparente est absolument nécessaire et technologie
+de la blockchain pourrait etre  la solution. la marché des produits phamaceutique contrefaits se dévéloppe rapidement.
+les revenus provenant du commerce mondial illicite de médicaments contrefaits pourraient atteindre 75 à 200 milliards
+de dollars par ans , selon les estimations du département americain du commerce. l'industrie est très rentable.
+
+le commerce des faux medicament ravage l'afrique.
+ la fabrication  et la vente de médicaments contrefaits seraient 10 à 25 fois plus rentables que les trafic
+ d'opioides. les faux médicaments se sont répandus si rapidement que, selon le coodrdinateur de la lutte contre la contrefacon
+ et le piratage à l(organisation mondiale des douanes, " il pourrait désormais y avoir plus de faux que de vrai médicaments sur le marché"
+ le fleau des faux medicaments été particulièrement aigu dans les pays en dévéloppement . selon les estimations de l'organisation mondiale de la santé (OMS). 
+ "1 médicaments sur 10 circulant dans les pays à revenu faible ou intermédiare est soit insalubre,soit falsifié", allant des vaccins antigrippaux au traitement 
+ du cancer. à l'echelle mondiale , environ 200 000 décès évitables se produitsent chaque année en raison de médicaments antipaludiques inefficaces. 
+ selon de récents estimation de l'OMS , les médicaments de qualité inferieure et les médicaments 
+ contrefaits pourraient etre responsable de 116 000 dècés par paludisme chaque années en afrique subsharienne seulement.
+ 
+ Une analyse réalisée a montré qu'entre 72 000 et 169 000 enfants dans ces pays meurent chaque année dans des suites de faux antibiotiques . les medicaments contrefaits
+ fot parfois l'actualité . par exemple lorsque plus de 1 000 personnes ont subi des effets toxique et ont été envoyées à l'hopital en novembre 2017 après avoir 
+consommé des médicaments adultères en république démocratique du congo. les pays les plus touchés en afrique sont: nigeria , bénin, kenya , togo, cote d'ivoire,
+burkina faso, sénégal,mali
+
+
+
+les faux médicament sur internet
+l'augmentation du nombres de médicaments contrefait est liées à une augmentation général du nombre de personnes utilisant internet pour acheter des produits,
+notamment parmi celles qui utilisent internet pour se diagnostiquer et se prescrire. cette pratique peut amener les gens à acheter des médicament inefficaces, 
+les médicaments qui néccessitent normalement une ordonnance , ou  d'acheter ce qu'ils pensent etre des médicament légitimes mais qui sont en realité des faux .
+
+la blockchain un remède pour l'approvisionnement phamaceutique.
+les technologies des grands livres distribués , y compris la blockchain, qui enregistre les transactions dans un système décentralisé, immuable et transparent , 
+pourraient aider à lutter contre ce problème grave, selon  le rapport du groupe de la banque mondiale, la tracabilité des médicaments pourrait etre ameliorée en 
+utilisant  un grand livre numerique distribué pour suivre "les matière premières phamaceutiques et les produits finis , des fabricants aux utilisateurs finaux"
+
+
+la blockchain peut servir de plat-forme pour le partage d'informations entre plusieurs bases de données de la chaines d'approvisionnement et permettre aux differentes 
+parties de vérifier l'authenticité des transactions qui entrent dans le grand livre. ensemble, ces fonctionnalités pourraient aider a empecher les médicaments qui ne proviennent
+pas de fabricants légitimes d'entrer dans la chaine d'approvisionnement phamaceutique. en theorie avec une blockchain phamaceutique,il serait impossible de falsifier
+un médicament ou échanger des médicaments légitimes contre des faux médicaments.
+
+la sécurité est la principale caractéristique de la technoligie de la blockchain qui est utile pour la tracabilité des médicaments . chaque  nouvelle
+transaction ajouté à un bloc est immuable et horodate, ce qui facilite le suivi d'un produit et garantit que les informations ne peuvent pas etre modifier. une blockchain
+peut etre publique ou privée.
+
+pour assurer l'authenticité et la tracabilité des medicaments , les entreprises qui enregistrent un produit  sur la blockchain doivent etre dignes de confiance. 
+par consequent, seules les chaines de blocs privées controlees par une entités centrales sont logiques pour s'assurer que les faux médicament ne sont pas enregistrés.
+l'accès d'une sociétes à la " chaines de médicaments " constituerait donc une preuve de l'authenticité des médicaments produits. les sociétes phamaceutiques décident
+quels acteurs de la chaine d'approvisionnement agissent en tant que mineurs.
+
+il pourait s'agir de fabricants , de distributeurs ou de détaillants. en fonction de la position dans la chaine d'approvisionement , chaque personne peut avoir des droits
+differents: les laboratoires peuvent en enregistrer les médicaments tandisque les grossistes ne peuvent que vérifier les transations. quand medicament est produit, 
+un hachage est générer, lequel contient toutes les informations pertinents sur le produit.
+
+chaque  fois que le medicament passe d'une entité à une autre( par exemple , du fabriquant au distributeur) , les informations sont stockées dans une chaines de block,
+ce qui facilite le suivi du médicament et enregistre des informations sur les transactions, telles que la date, l'heure et le prix de la transaction. les médicament
+sont vérifiers au moyen de code QR et de numero de série. par consequent, la possibilité d'obtenir un emballage different de celui enregistré sur la blockchain par 
+le produit produit phamaceutique est en realité inexistante.
+
+le potentiel  de la blockchain pour lutter contre la contrefacon de médicament a attiré l'attention des société phamaceutiques et des leaders de l'industrie. mais les 
+défis restent ceux qui espèrent dévélopper des projets de chaines de blocks dans l'industrie phamaceutique, des projets pilotes aux solutions à long terme,
+se heurtent à un obstacle immédiat: concevoir un modele commercial durable qui finance la mise en oeuvre de la solution et créer une structure d'incitations.
+
+cela est particulièrement important pour les sociétés phamaceutique opérant dans des pays ou modèles de conformité ne sont pas strictement réglémentés
+
+la tracabilité du circuit des médicaments à l'aide de la blockchain nécessite un enregistrement et un horlodatage du transfert des marchandises chaque point de
+la chaine d'approvosionnement . cela nécessite des efforts et des resources considérables , ce qui se traduit par des couts supplementaires
+
+
+la pluspart des personnes estiment que les fabricants de produits phamaceutiques devraient supporter le cout de la mise en oeuvre et de la maintenance, et seulement
+30poucent environ souscrivent à l'idée d'une mise en oeuvre partagée. dans l'etat actuel des choses , le financement des systèmes de suivi et de tracage basés sur les 
+chaines de block reste incertain
+
+
+cela cause  
+
+
+
+
+
+
+
+
+ 
+ *************************************************************** les object de la journée***********************************************************
+ 1- mettre une condition de validation sur mes champs input pour eviter d'envoyer les message vide
+ 2- cherche comment utiliser du jquery pour affichier et couvrir un texte
+ 3- retrouver  un problème de modélisation déja resolu
+ 4- voies comment chercher le formulaire d'une bourse d'etude
+ 
+ 
+ 
+ ****************************************************** pour deployer mon application laravel sur heroku **********************************************
+ pour deployer sur heroku:
+ 1_ heroku login
+ 2_ heroku create
+ 3_ git remote -v// pour verifier si mon gestionnaire de dependance est bien sur la branche souhaiter
+ 4_change key php artisan key:generate
+ 5_ heroku config:set APP_KEY=cle qui est dans le fichier .env de notre fichier laravel
+ 
+ //pour cette etapes je dois d'abord allez selectionner ma base de données postgress qui se trouve dans  et configurer les parametre
+ 6_ heroku config:add DB_CONNECTION=pgsql //connection a la base de données pgsql qui est dans heroku
+ 7_ heroku config:add DB_HOST=ec2-54-152-175-141.compute-1.amazonaws.com
+ 8_ heroku config:add DB_PORT=
+ 9_ heroku config:add DB_DATABASE=
+ 10_heroku config:add DB_USERNAME=
+ 11_heroku config:add DB_PASSWORD=
+ 12_git push heroku master
+ 13_heroku run php artisan migrate:refresh //rafrechir les migration pour les rendre accessible a partie de pgsql qui est situe dans sur heroku
+ 
+ 
+ *******************site php a visiter *****************************************
+ www.php-the-right-way.com
+ ************************************apres une bonne reflexion j'ai décidé de realiser une application appeller status family******************
+ **dans cette application les utilisateur doivent faire des postes pour presenter au membre de la family qui serqi supprimer apres 7 jours automatiquement
+ 
+ *************************************************************LINK INFORMATION DE CELINE****************************************
+ link qui nous a aider pour effectuer le systeme lancement de l application a partie du navigateur en utilisant le php
+ https://openclassrooms.com/forum/sujet/ouvrir-un-exe-a-distance-via-une-page-web-et-php,
+ 
+ link qui nous aider a verifier le système de connection et de deconnection des utilisateur dans notre application
+ https://www.webslesson.info/2017/08/display-online-users-using-php-mysql-with-ajax-jquery.html
+ 
+ 
+ 
+ 
+ 
+********************************************* ce que je dois faire du parapheur electronique
+ ---var ri: ressource interne;
+ ---var re: ressources externe;
+ verifier le type de ressource. si la ressources provient de l'interieur ou de l'externe de ressource.
+
+
+*************************************les fonctionnement de chaque modèle definir par HOrBAC.
+*************commenceons par le parapheur electronique du modèle.
+************* la relation emploie:
+Emploie(UDS,Paul,Secretaire); // l'université de dschang emploie Paul au poste de sécrétaire.
+Emploie(org,e,uo);
+**************la relation utilise:
+Utilise(UDS,docEtudiantTBL,administratif);//l'université de dschang utilise la  docEtudiantTBL dans la vue adminisatratif
+Utilise(org,r,v)
+***************la relation considère:
+Considère(UDS,insert,Creation);// l'universié de dschang considère l'action d'insert sur la requete de creation;
+Considère(org,a,q)
+
+les mode de traitement 
+Nous avons deux modes de traitement:
+temps réel: lorsqu'une requete est exécuté sans attendre le superieur hiérachique
+temps différé: lorsqu'une requete neccessite l'apport du superieur hiérachique pour une validation
+
+*******************permission operationnel*********************************
+Permission_opérationnel(UDS,enseignant,consulter,enseignement,ordinaire,normal);
+cette permission indique que l'organisation UDS permet aux enseignants de demander de consulter les
+programmes de leurs enseignement et d'attendre la reponse de la hiérarchie.
+PermissionOperationnelle(org,uo,q,v,c,m)
+
+*******************permission administratif********************************
+Permission_administrative(UDS, département, consulter, enseignant, enseignement, ordinaire, normal)
+la permission indique que l'organisation UDS permet aux département de traiter les requetes.
+emises par les enseignants sur la consultation des programmes de leurs enseignement en mode normal.
+Permission_administrative(org,uo,q,v,c,m)
+
+*******************Les contextes
+Nous considérons trois contextes dans notre exemple : «enseignement», «administration» et «jury».
+Le contexte «enseignement» est défini par :
+VeVrVa (Définit(UDS, e, a, r, enseignement) (<-->) Nom(r) (appartient) Matière(e) (A) Emploie(UDS, e, Gère(r))) : à lUDS, le contexte «ordinaire» est vrai entre lemployé
+e, laction a et la ressource r si et seulement si r est une matière enseignée par e
+et que lunité organisationnelle qui gère r emploie e.
+
+
+
+*****************le  modèle  HRU,qui  s applique  sur  des  sujets,  des  objets  et  des actions. De  manière intuitive,  un  sujet est une entité
+active  alors  qu un  objet  est  un  conteneur dinformation.  Les actions offrent aux sujets un accès direct aux objets. Elles  correspondent  généralement  à  des  actions élémentaires  comme  lire  ou  écrire. Dans  ce
+modèle,  la  politique  de  sécurité  est  réduite  à lexpression  des  permissions;
+---ce  modèle  ne permet  pas  dexprimer  des  interdictions,  des obligations ou des recommandations.   
+ 
+****************Dans  le  modèle  de  contrôle  d accès  basé sur  les rôles,  ou  RBAC,  la  politique  de  sécurité  ne
+sapplique pas directement à des utilisateurs comme dans  le  modèle  précédent. Le  rôle  est  ici  le  concept
+central  de  la  politique  de  sécurité D un  côté des  permissions  sont  accordées  aux  rôles de
+l autre  les  utilisateurs  se  voient  affecter  un  ou plusieurs  rôles. 
+---Le  concept de hiérarchie de  rôle est  quelque peu  ambigu.  En général,  la hiérarchie  des
+rôles  ne  correspond  pas  tout  à  fait  à  la  hiérarchie  organisationnelle.  Par  exemple,  
+le directeur de lhôpital a un rôle administratif supérieur au rôle de médecin. Pour autant,
+un  directeur  de  lhôpital  nest  pas  nécessairement  un  médecin,  ainsi  il  nest  pas
+faisable daccorder au directeur les permissions du médecin.
+---il  n est  pas  possible  dans  le  modèle RBAC  d exprimer  des  permissions  qui  dépendent du contexte.
+ il  n y  a  aucun  moyen de  spécifier  qu un  médecin  n a  la  permission d accéder  au  dossier  médical  d un  patient  que  si  ce
+dernier  est  son  patient .
+  il est  uniquement  possible  de  définir  des  permissions.
+l application  du  modèle  RBAC  à  la définition  d une  politique  de  sécurité  d un  système
+contenant  plusieurs  organisations  fait  apparaître d autres limites de ce modèle
+
+*****************************je suis ici sur la partie implementation de mon application
+** si dieu le permet cet que je dois faire ce soir est :
+****************presenter xamp
+****************presenter visual sudo code
+****************parler de l'outil de de filezila
+
+**si dieu le permet aussi je dois presenté les language utilisé pour codé l'application
+
+** désinez certain interface et faire des capture pour expliquer le mode de fonctionnement de mon application.
+
+************************************modèle orbac et ces extensions.
+Le modèle de contrôle daccès Or-BAC (Organization Based Access Control)
+vise à résoudre certains problèmes rencontrés par les premiers modèles de contrôle daccès des années 90 et à établir une politique de
+contrôle daccès plus abstraite.
+
+
+*********************************parametre de connection des données dans ma base de données pour l'université de dschang
+
+***************** administrator:tchoufack@tchoufack.com password:159753     
+***************** validate :feugap@feugap.com      password:0258
+***************** teacher :azanguezet@azanguezet.com password:0369
+***************** student : tsalata@tsalata.com          password:0159147
+
+
+********************************parametre de connection pour l université de douala
+******************************* les modèles de controle collaboratif
+
+******************************* multi-Orbac
+Multi-OrBAC est une extension du OrBAC pour les systèmes multi organisationnels
+complexes, hétérogènes, interopérables et distribués. Cest un modèle de sécurité dynamique
+et adaptable, permettant dun côté de spécifier des politiques de sécurité différentes dans
+chaque organisation, et de lautre dimposer des règles pour les interactions entre organisations
+qui soient compatibles avec les politiques de chaque organisation. Ce modèle vise donc des
+applications et systèmes complexes, hétérogènes, interopérables et distribués.
+****Multi-OrBAC garde la méthodologie très pertinente dOrBAC
+****Le principal défaut de Multi-OrBAC réside dans le fait que la définition de la politique
+de sécurité de chaque organisation doit prendre en compte, donc connaître, 
+des entités appartenant à dautres organisations, et suppose donc une confiance
+entre les organisations pour ce qui concerne la gestion de ces entités.
+
+*******************************VO(Virtual Organization)
+****Une Organisation Virtuelle(OV) est un ensemble dorganisations reliées par les technologies
+ dinformation (TI), poursuivant la réalisation commune dun projet ou dune activité économique.
+***Une Organisation Virtuelle définit une communauté virtuelle formée de plusieurs organisations
+ ou entreprises qui unissent leurs compétences et ressources pour répondre à une opportunité
+ quelles nauraient pu prendre en charge seules.
+****Cette alliance est en général définie pour une durée limitée : une fois le bien ou service livré,
+le regroupement est démantelé. Les infrastructures des technologies de linformation sont au coeur
+de lorganisation virtuelle et le support de ses activités
+
+
+
+******************************************SI
+Dans un système informatique, lautorisation a pour but de
+ne permettre que les actions légitimes, cest-à-dire à empêcher
+quun utilisateur puisse exécuter des opérations qui
+ne devraient pas lui être permises. Pour définir quelles sont
+les opérations autorisées et celles qui sont interdites, il faut
+établir une politique de sécurité.
+
+******************************************modèle HOr-BAC
+	Etant donne  que ce modèle à été définir pour un fonctionnement dans un cadre 
+	\textbf{Organisationnel}  c'est-a-dire au sein d'une \textbf{Organisation} .
+	Le problème qui ce pose est de savoir comment 
+	définir la politique du modèle dans un cadre collaboratif (entre \textbf{Organisation}).
+	
+****************************************La COVID-19
+Le Cameroun, Comme dans certains pays d'Afrique et du monde, 
+en raison de la crise sanitaire actuelle qui prévaut, le pays
+ fait face à des difficultés en tout genre qui touche de nombreux 
+ secteurs d'activité et met en mal l'économie du pays. La COVID-19,
+ de son nom, Survenu en décembre dernier à WUHAN, en Chine,
+ est une pandémie qui a su imposer à l'humanité un nouveau 
+ mode de vie, à tel point que même les commodités d'usage 
+ en paient les frais. L'un des secteur les plus toucher est le secteur 
+ de éducatif. %pour éviter la perte total de l'année scolaire 
+ les gouvernement camerounais a mit sur pied un système de e-learning
+ pour les étudiants et cours télévisés pour les élèves du secondaire.
+ Notre objectif est de faire communiquer ces différents Platform des 
+ échanges les données et services.
+******** celine dion
+i believe music  
+********futurist
+say something
+
+ https://www.youtube.com/watch?v=BmErRm-vApI
+ https://www.youtube.com/watch?v=BmErRm-vApI
+ https://wwv.hds-streamingvf.net/films/our-brand-is-crisis/
+ 
+ 
+------important a savoir par rapport a git-------
+--la commande git log permet de voir tout les imformation relative a un commit dans git
+--la commande git log --oneline permet de voir les sujet des message de commit
+--la commande git shortlog permet d'affichier a plus des sujet l'auteur des commit 
+--pour renommer un fichier sur git la tape la comment git mv ancien_nom nouveau_nom
+--pour paser du repertoire de travail au depot git directement on execute la comment git commit -a -m "message de commit"
+--la commande git rm nom_fichier effectue deux action. il supprime un fichier du repertoire de travail et le supprime aussi de l'index 
+donc faire un git rm revient a faire un rm du fichier et un git add 
+-- pour supprimier un fichier deja envoyer dans le cached de git il suffit d'exercuté la commande git rm --cached nom_fichier
+--pour ajouter un fichier dans la liste des fichiers a ignoré il suffit d'exercuté la commande
+//intermediare très important aujourdhui que j'ai vue c'est la bourse d'etude
+//le mots est utilisé pour chercher les bourses d'etude grados : scholarship around the world
+
+--invide de commande de git il faut lorsque on faire un git log pour affichier les historiques, si a la fin un : 
+saffiche cela veut dire tout simplement que tout les histiroque ne sont pas encore affichier dans se cas, 
+il vous suffit de cliquer sur enter pour afficher tous les modifications. et q pour quitte 
+
+--étant donné que un commit c'est une modification pour filtrer par auteur il suffit pour nous de taper la commande git log --author "nom de l autheur"
+--pour netoyer le terminal windows il faut taper juste la commande cls
+--un peu aussi affichier les commit pas date en tapant la commande git log --before="ANNE-MM-JJ" On peut aussi utiliser after pour dire a la date qui viens bien après
+--pour savoir ce qui a été effectuer sur un fichier en particulier il suffit pour nous d'excercuté la commande git log nom_fichier// git log --online nom_fichier 
+pour resumé sur une ligne 
+
+
+--la commande git diff nous permet de comparer nous index au depot git 
+--la commande git giff --cached nous permet de comparer les modification qui sont dans notre cache
+--pour comparer notre depot au repertoire de travail il suffit d'appliquer la commande git diff HEAD
+-- Pour afficher la difference du contenu du derniere commit il suffit d'appliquer la commande git diff HEAD^1
+--on peut egalement comparer le recourcies  plus hache en exercutant la commande git diff hache1 hache2
+--pour rechercher un commit spécifique il suffit d'exercuté la commande git log -S "valeur de recherche" //meme l'option -G fonctionne pour les meme effet 
+--la commande git blame nom_fichier nom permet de affichier le code source du fichier et les informations par rapport a la personne qui a effectuer ces modifications
+-- pour annuler les modifications dans notre projet pour revenir au projet initiale 
+il suffit d'exercuté la comme git reset --hard
+--pour revenir a une modification qui fonctionne bien il suffit d'exercuté 
+git log --oneline pour d'abord affichier et après get reset --hard hacher. pour revenir a la modification qui fonctionnait bien 
+pour supprimer les fichiers presents dans gitignore il suffit d'exercuté la commande
+git clean -xf 
+
+
+
+
+--la commande git log --oneline --branches --graph permet d'affichier une architecture bien detailler de notre programme  
+--pour verifier sur quelle branch on se trouve il nous suffit pour cela d'exercuté la commande git branch
+--pour afficher les branche et les commit sous forme de graphe il faut executer la commande 
+git log --graph --oneline
+--pour creer une branch il suffit d'exerté la commande git branch nom_de_branche. les caractère spéciaux ne sont pas autorisé
+-- pour changer des branch il suffit d'exercuté la commande git checkout nom_de_branche
+-- pour fusion il suffit pour nous de nous position sur la branche  principale et d'exercuté la commande git merge nom_de_la_branche_que_on_souhait_ajouter
+--git checkout -b nom_de_branche nous permet de creer une branche et directement faire un checkout(se position) dessus
+-- pour resourdre les conflit dans notre project git il nous suffit d'allez dans notre projet et regarder nous se trouve : HEAD car cela est bien indiquer dans notre project<<<<<<< >>>>>>>
+-- pour supprimer une branche il suffit d'exercuté la commande git branch -d nom_de_branche
+--pour changer de version dans notre projet il nous suffit d'exercute la commade git tag v1.0.0 harcher
+le comment git show nous permet de bien daguer pour verifier la version du projet sur lequelle on est situé
+--pour ajouter des anotation il nous suffit d'exercuté la commande git tag -a version harcher -m"message de version " | -a pour annotation
+git show version pour voie la version 
+-- pour creer un depot distant vide il nous suffit d'exercuter la commande git init --bare nom_depot
+--pour supprimer un depot distant il faut exercuté rm Rf nom_depot
+--pour creer un depot distant associer a notre projet il nous suffit d'exercuté la commande git clone  --bare nom_depot_local_a_qui_on_souhait_associer_notre_depot_local/nom_depot_distant
+--pour verifier que notre depot distant est bien connecter a un depot local il nous suffit d'exercuté la commande git remote. (origin pour github et heroku pour la platform de heroku)
+--pour connecter sont depot local au depot distant il suffit d'exercuté la commande git remote add url_du_depot // ex:./distant/
+--pour envoyer dans notre depot distant il nous suffit pour cela d'exercuté la commande git push origin master
+--pour afficher tout les branch avec les branche ditant il vous suffit d'exercuté la commande git branch --all
+pour creer une branche distant et basculer decu il suffit d exercute la commande 
+git checkout -b nom_branche origin/nom_branche
+pour supprimer un branche distante il suffit d'exercuter la commande git push origin:nom_de_branch
+pour supprimer une branche local il suffit d'exercuter la commande git branch -d nom_de_branch
+--gitk est outil de git nous permettant de regrader les information git sous forme vituele
+on l'install sur ubuntu grace a la commande sudo apt-get install gitk
+
+lorsque on a un bue la commaande git bisect nous permet de chercher le commin qui coser probleme(bug)
+les allias dans git sont les suivants 
+git co//pour checkout
+git br //pour branch
+git ci //pour commit 
+git  st //pour status
+
+
+
+comment deployer une application php avec une base de donnée sur heroku?
+Les outils qui doivent etre installer dans votre système d'exploitation //xampp,protgress,composer,heroku,git
+--ce connecter grace a la commande heroku login
+--creer une application vide grace a la commande heroku create
+--une fois l application creer,initializer git au sein de notre application grace a git init
+--faire ensuite un git add . et un git commit -am"udapte" pour ajouter les depot au repositories git 
+--faire un heroku git: remote -a engimatic app_name(l'application qui est sur heroku) pour connecter notre depot distant
+--une voit lier le depot distant il faut push l'application sur heroku grace a git push heroku master
+--creer la base de données grace la commande suivante:
+heroku addons:create heroku-postgresql:hobby-dev -a app_name//a la fin de sont exercution on doit vous presicer le nom de votre application. pour nous ici c'est postgresql-infinite-40005
+ensuite allez dans les setting de la base de données qui a été creer recuperer host,database,user,port,password car se sera les nouvelle nouvelle information qui seront utiliser lors de la connection de mon application
+--recuperer le Heroku CLI et l'exercuter dans notre ligne de commande pour pouvoir inserer les donners dans notre base de données
+ex:heroku pg:psql postgresql-reticulated-50752 --app salty-ridge-28174 une voie son exercution nous pouvons commancer a nous connecter et manipuler notre 
+base données en invite de commande (CREATE TABLE NAME_TABLE ET INSERER les element dans les table qui on ete creer)
+--faire un git add . et un git commit -m" pour push le project a nouveau sur heroku"
+--si vous avez une erreur faire un heroku git:remote -a app_name
+-- faire un git push -f heroku master pour l'option -f est utiliser pour forcer le push sur heroku 
+
+
+//les chant a augmenter le chant contact, le change addresse, numero, modifier egalement les newlletter de tous les pages,regarder aussi le problème sur les photos 
+//voie comment je peux augmenter le nombre d'images sur les photos et modifier egalement les photos qui se répete ajouter les validation sur les formulaire
+
+//pour les resultat du premier deployement
+
+//canadaville.co est relier a https://geniusv2.herokuapp.com/
+
+
+
+
+// si les chose ne fonctionne pas comme il faut dans virtual box, c'est que les technologie de vitualisation ne sont pas active dans mon application et pour ce fait 
+// je vais allez dans virtual box et activé les technologie de virtualisation
+
+//ansible
+//ansible permet d'automatiser les tacher sur les serveur distant encore appeller les nodes.
+//les serveur qui pousse les information sur le serveur distant est appeller le node manager. c'est sur celui si que est installer ansible.
+//le node manager communique avec les node grace au au script ssh 
+//pour pousser ces information sur le nodes les node manager utilise des script rediger grace a la syntaxe YAML
+//chaque fichier de configuration comporte une suite de tache a effectuer et chaque tache utilise un module qui éffectura une action
+//nb:ansible s'installe sur le node manager uniquement 
+//tous les commande ansible sont pour depuis le node manager vers les node on appelle cela un fonctionnement en mode push
+//les nodes on unoiquement besoin de ssh et python pour exercuter les tache envoyer pas ansible
+//pour installer ansible nous allons utiliser pip le gestionnaire de package python 
+//nous allons creer un simple utilisateur linux pour lancer les commande d exercution
+//nous allons egalement utiliser virtualenv qui nous permettant de mettre en place en environnement virtuel qui sera dedier totalement a l'exercution de ansible
+
+
+
+//ce qui je doit dire ce soir pour commercer la formation
+ I can do it. I need some time before I start the certification. Please, sir, give me some reading time to prepare before the exam. 
+ 
+ 
+ //telecharger une photos payante gratuitement
+ pour cela il suffit de copier le lien de la photo  sur les site comme tomato.to ou encore downloder.la 
+ //pour telecharger un template gratuitement
+ pour telecharger un template gratuitement il suffit pour cela de telerchager wget.exe et exercuter la commande suivante: .\wget.exe -r url_du_site
+ //pour telecharger un livre gratuitement il suffit de cliquer le nom du livre sur le moteur de recherche https://b-ok.africa/?regionChanged=&redirect=16334956
+ 
+ //pour basculer d une  du clavier francais au clavier anglais sur ubuntu utiliser soit setxkbmap fr
+ou setxkbmap us en invite de commande 
+
+
+
+ //openclassroom pour deployer un wiki qui doit etre utiliser par les devops pour effectuer des echangers
+installation et configuration de ansible
+--sudo adduser user-ansible . pour ajouter un utilisateur ansible
+--installer le package python virtual env qui doit nous permettre de creer l environnement
+virtuel apt install python-virtualenv.
+--ensuite nous allons switchier sur  l utilisateur que l on viens de creer  grace a la commande su - user-ansible
+--creer l environnement de travail virtuel grace a la commande virtualenv ansible2.7.10
+--une fois l'environnement virtuel est creer il faut l'activer
+pour le faire il faut utiliser la commande source ansible2.7.10/bin/activate cette commande a pour effect de nous placer dans l environnement virtuel
+--installer ansible en version 2.7.10 pip install ansible==2.7.10
+
+
+
+
+
+//update ubuntu version16.04 to 18.04
+
+--sude apt update
+--sudo apt upgrade
+--sudo apt dist-upgrade
+--sudo apt-get autoremove
+--sudo apt install update-manager-core
+--sudo do-release-upgrade -d
+before to install the virtuel machine in we following instruction:
+--config an add preconfig system osboxes in my VM for doing i must go in 
+to https://osboxes.org site, download centos7 system and add in my VM
+now open up ssh terminal mobaXterm create new session and specify
+the password  and  an login.
+--create clone on virtuel machine . before create i must going to shutdown 
+the virtual marchin that i want create the lone for it don't forget to click renizilise mac address in the next page don't forget 
+to select linked done
+--before create ansible-controller using clone to create centos-template and 
+ansible-target1
+--using ssh of mobaXterm to start two session, ansible-target1 session and ansible-controller session
+--the new step is rename the host to rename the host going in sudo vi /etc/hostname
+--going to modify the sudo vi /etc/hosts
+--adding localhost ansiblecontroller
+--before finish using command shutdown now -r to retstart system
+--repeat this option for target1
+--and restart system
+--create another clone for target2 and select link clone
+--want i have finish i'm going to install ansible in my centos system
+--now i'm going to install ansible to ansible controlle machine . to install
+ i'am to using command ansible-controller machine.
+ before install run command  sudo yum install epel-release && sudo yum repolist && sudo yum install ansible 
+
+ --want i have finish, i am using ansible --version to check version of my ansible
+ansible can work one and more insfrusture system in the same time
+--ansible is agentless system. agenless meams we don't have to install
+any additionnal solfwore
+information about a target system is store in inventory file if you don't
+ansible using default inventory file in etc/ansible/hosts
+example of inventory file
+ansible_host est using to specify the ip addr fort et serveur
+inventory parameters:
+ansible_connection--ssh/wirnrm(for windows system)/localhost
+ansible_port--22/5986
+ansible_user--root/administrator(for windows system)
+ansible_ssh_pass--password
+
+--check connectivity beetween ansible for a target marchine
+in ansible run ssh address (addr of machin that i want to connect)
+now you can exit for the system to test
+--now in ansiblecontroller i'm going to creer mkdir test-project
+--inside that test-project i'm to create inventory file
+with cat > inventory.txt
+now run cat inventory.txt to show
+now to teste connection i running ansible ansibletarget1 -m ping -i inventory.txt
+now want a modify to udapte the target marchine sudo vi inventory.txt
+we add ansibletarget2
+nb: it's recommande to using ansible ssh now in this tutoriel we a going to disabled ansible.cfg make host_key_check in false
+
+
+create a connectivity file to test the communique with command 
+cat > playbook-pingtest.yaml and write the following texte in this playbook
+-
+	name: test connectivity to target servers	
+	hosts:all
+	tasks:
+		- name:Ping Test
+		  ping:
+when you have finish you can test this command to show connectivity
+ansible-playbook playbook-pingtest.yml i inventory.txt you must show all playbook of ansible
+
+---system modules is use to motify
+System: User,Group,Hostname,Iptables,Lvg,Lvol,Make,Mount,Ping,Timezone,Systemd,Service
+---command use to execute command or script in host
+Commands: Command, Expect, Raw, Script,Shell
+---for example usind ACL modules for definit and recup the informations ACL on the files
+Files:Acl,Archine,Copy,File,Find,Lineinfile,Replace,Stat,Template,Unarchive
+---database modules help to working database ,add and remove database configuration
+Database :Mongodb,Mssql,Mysql,Postgresql,Proxysql,vertica
+---the cloud section as a fast collection of modules
+Cloud:Amazon,Atomic,Azure,Centrylink,Cloudscale,Cloudstack,Digital Ocean,
+Docker,Google,linode,Openstack,Rackspace,Smartos,Softlayer,VMware
+---windows modules help to using ansible in windows environment.
+Windows:Win_copy,Win_command,Win_domain,Win_file,Win_ils_website,Win_msg,Win_msi,
+Win_package,Win_ping,Win_path,Win_robocopy,Win_regedit,Win_shell,Win_service,Win_user,
+...
+
+using ansible with when conditionnal
+---
+
+- name: Install NGINX
+  hosts:all
+  tasks:
+  - name:Install NGINX on debian
+    apt:
+	  name:nginx
+	  state:present
+	  when:<<condition>> //when:ansible_os_family=="Debian" and ansible_distribution_version=="16.04"
+	  
+	  
+  - name:Install NGINX on Redhat
+    yum:
+	  name:nginx
+	  state:present
+	 when<<condition>>//ansible_os_family=="Redhat" or ansible_os_family=="SUSE"
+	 
+if a want to do	 
+// -name: Install "{{ item.name}}" on debian
+   vars:
+     item:
+	   name:nginx
+	   required:true
+   apt:
+     name:"{{ item.name}}"
+	 state:present
+	 
+	 
+-name: Install "{{ item.name}}" on debian
+   vars:
+     item:
+	   name:mysql
+	   required:true
+   apt:
+     name:"{{ item.name}}"
+	 state:present
+	 
+	 
+	 
+	 -name: Install "{{ item.name}}" on debian
+   vars:
+     item:
+	   name:apache
+	   required:true
+   apt:
+     name:"{{ item.name}}"
+	 state:present
+	 
+	 
+	 
+	 
+  -name: Install "{{ item.name}}" on debian
+   hosts:all
+   vars:
+     packages:
+	   -name:nginx
+	    required:true
+	   -name:mysql
+	    required:true
+	   -name:apache
+	    required:False
+   tasks:
+   - name
+     apt:
+       name:Install "{{ item.name}}" on debian
+	   state:present
+	 when:item.required==TQrue	 
+     loop:"{{packages}}"
+	 
+	 
+-name: check status of a services and email if its down
+ hosts:localhost
+ tasks:
+    - command:service httpd status
+	  register:result
+    - mail:
+        to:admin@company.com
+	    subject:Service Alert
+		body:httpd service is down
+		when:result.stdout.find('down')!=-1
+		
+	   required:true
+   apt:
+     name:"{{ item.name}}"
+	 state:present
+	 
+	 name:Create users
+	 hosts:localhost
+	 tasks:
+	  - user:name='{{item}}' state=present
+	    loop:
+		  -joe
+		  -george
+		  -ravi
+		  -mani
+		  
+		  
+		  
+	using this line to list some product	  
+    name: 'Print list of fruits'
+    hosts: localhost
+    vars:
+        fruits:
+            - Apple
+            - Banana
+            - Grapes
+            - Orange
+    tasks:
+        -
+            command: 'echo "{{item}}"'
+            with_items: '{{fruits}}'
+
+			
+using this line to install some package
+	 -
+    name: 'Install required packages'
+    hosts: localhost
+    vars:
+        packages:
+            - httpd
+            - binutils
+            - glibc
+            - ksh
+            - libaio
+            - libXext
+            - gcc
+            - make
+            - sysstat
+            - unixODBC
+            - mongodb
+            - nodejs
+            - grunt
+    tasks:
+        -
+            yum: 'name={{item}} state=present'
+            with_items: '{{packages}}'
+
+	
+
+	
+ -  name: installation of web server
+    hosts: web
+    remotee_user:
+    tasks:
+      - name: git install
+        apt:name={{item}} update_cache=yes state=lastest
+	    with_items:
+		     -vim
+			 -htop
+			 -git
+			 -gsh
+		
+	 -name: create user
+	 user:
+	 
+	 
+---
+- name: install web server
+  hosts: web
+  
+---
+1- for linux : install Firewall 
+
+(for this case commande that a can use is: 
+sudo yum install firewalld
+sudo service firewalld start
+sudo systemctl enable firewalld
+)
+
+2- for apache : install httpd, Configure httpd, Configure Firewall, Start httpd
+(
+sudo yum install mariadb-server
+sudo vi /etc/my.cnf #configure the file with the right port
+sudo service mariadb start
+sudo systemctl enable mariadb
+sudo firewall cmd --permanent --zone=public --add port=3306/tcp
+sudo firewall-cmd --reload
+)
+3- for mariaDB: install MariaDB,configure MariaDB,Start MariaDB,Configure Firewall, Configure Database,load Data
+(create and configure database)
+4- for php: install Php, Configure Code.
+(
+sudo yum install -y httpd php php-mysql
+sudo firewall-cmd --permanent --zone=public --add-port=80/tcp
+sudo firewall-cmd reload
+sudo vi /etc/httpd/conf/httpd.conf #configure directoryIndex to use index.php instead of index.html
+sudo service httpd start
+sudo systemctl enable httpd
+
+
+)
+
+---   
+	 
+to ping all host using command
+ansible -m ping all
+to install app in remote machine,using command
+ansible -m yum -a 'name=thunderbird' workstation
+#thunderbird is name of app that i want to install
+#workstation is group app that i want to install my app
+# end i going to using module yum because is ansible machin
+ 
+#ansible -m yum -a 'name=thunderbird state=present' workstation
+present: veux dire tout simple qu'on ne reinstalle plus lorsque il est deja present
+absent : nous permet de supprimer le logiciel
+verifier dans le dossier ou l'on se trouve
+pour verifier le nom du fichier sur libreoffice il suffit pour nous d'exercuter la commande
+rpm -qa| grep libreoffice using to show all version of libre office
+
+---
+- name: Installation des serveurs web
+  hosts: web
+  remote_user: root
+  tasks: 
+    - name: Installation de Git
+       apt: name=git state=latest
+...
+ansible-playbook -i hosts playbook.yml
+
+using ansible to list host of out programm 
+enter in your ansible directory and use command ansible -i dev --list-hosts all
+select hostname with command :
+ansible -m command -a "hostname" all 
+
+
+
+
+---
+-hosts:loadslancer
+	become:true #using to pass in sudo mode before installation
+	tasks:
+	 -name: install nginx #using to specify work name in console
+	  apt: name=nginx state=present update_cache=yes 
+	  #using to install nginx. if present otherwise it have been not install 
+      #if isn't it have be install
+      #update_cache means apt-get update	  
+	  
+	 
+
+
+#use to start service nginx	 
+---
+- name: check ansible service
+  become: true
+  tasks: 
+    - name: Install nginx
+       apt: name=nginx state=present update_cache=yes
+	-name:ensure nginx started
+	 service:name:nginx state=started enabled=yes
+	 
+...	 
+
+
+---
+- name: webserver
+  become: true
+  tasks: 
+    - name: Install web components
+       apt: name={{ item }} state=present update_cache=yes
+	   with_items:
+	    -apache2
+		-libapache2-mod-wsgi
+		-python-pip
+		-python-virtualenv
+		
+	-name: ensure apache2 started
+	 service:name=apache2 state=started enabled=yes
+	 
+	-name:ensure mod_wsgi enabled
+	 apache2__module: state=present name=wsgi
+	 notify: restart apache2
+  handlers:
+	-name:restart apache2
+	 service:name=apache2 state=restarted
+
+...	 
+sudo install sshpass user to install ssh-key on my node
+command to create user in the node
+ansible -i inventaire.ini -m user -a 'name=user-ansible password=sha256password' --user root --ask-pass all
+if i want to generate ssh key i'm going to run 
+ssh-keygen -t ecdsa
+le module suivant nous permet d'installer python sur les node
+ ansible -i inventaire.ini -m raw -a "yum install -y python2" http1 --user root --ask-pass
+ 
+ 
+$ansible localhost -i inventaire.ini -m debug -a "msg={{ 'passforce' | password_hash('sha512', 'sceretsalt') }}"
+localhost | SUCCESS => {
+"msg": "$6$sceretsalt$tBcfGEgifQpQZsg5CIGZ79XC55h5vHy7UWrys7cAF37KNCQQbm7iCvy58MlLQLaS2fLF6ZjqDVHhVrkMdRi0f0"
+}
+
+ansible -i inventaire.ini -m user -a 'name=user-ansible password=$6$sceretsalt$tBcfGEgifQpQZsg5CIGZ79XC55h5vHy7UWrys7cAF37KNCQQbm7iCvy58MlLQLaS2fLF6ZjqDVHhVrkMdRi0f0' --user root --ask-pass all
+
+Connectez-vous au node http1, et regardez le fichier /etc/sudoers ; il contient  les configurations de sudo :
+Vous pouvez voir la ligne suivante :
+## Allows people in group wheel to run all commands
+%wheel ALL=(ALL) ALL
+
+Le groupe wheel a les droits sudo. Vous allez donc ajouter lutilisateur user-ansible dans le  groupe wheel sur tous les nodes :
+ansible -i inventaire.ini -m user -a 'name=user-ansible groups=wheel append=yes ' --user root --ask-pass all
+
+Un moyen de vérifier que user-ansible a bien les droits sudo est de relancer la commande précédente, mais en ajoutant de nouvelles options :
+
+ansible -i inventaire.ini -m user -a 'name=user-ansible groups=wheel append=yes ' --user user-ansible --ask-pass --become --ask-become-pass all
+
+Vous allez utiliser le module authorized_key pour enregistrer la clé publique de l'utilisateur user-ansible sur tous les nodes. Ainsi, vous pourrez vous connecter aux nodes sans saisir de mot de passe SSH.
+
+ansible -i inventaire.ini -m authorized_key -a 'user=user-ansible state=present key="{{ lookup("file", "/home/user-ansible/.ssh/id_ecdsa.pub") }}"' --user user-ansible --ask-pass --become --ask-become-pass all
+
+
+
+
+---site web de presentation
+
+
+---site web de formation en ligne
+---site de formqtion avec trois ou 4 slider avec des texte different
+---les course de it 
+---les course de technologie industuellle
+---on a en tour 4 demain
+---nb: les premier domain sont les cours de it
+---section de preentation de savoir
+---index ou nos cours ou on doit mettre les rqcourci de tours les cours
+---un formulaire d'engistrement pour les formation qui doit appeller a la fin de chaque cours.
+---les site web doit Etre bilingue
+
+
+---ansible traning today
+-----provision virual machine in amazon web services
+--create a virtual private cloud(VPC)
+--create a subnet and a security group
+--create three virtual machine instances
+----install ELK STACK (elasticsearch, logstash, and kibana)
+--deploy to amazon web services instances
+--install and configure the software
+--visit the kibana dashboard in web browser
+
+
+--ansible-playbook -i localhost,playbook.yaml
+cette comment permet de dire a ansible d'utiliser les playbook playbook.yaml sur la liste des inventaire localhost
+
+--check group in ubuntu 
+to check, run command: groups ubuntu to show your group and run command:
+cat /etc/sudoers to show all configuration.
+
+
+---the inventory tells ansible where to perform tasks
+static inventory is the inventory that the same everytime
+dynamic inventory is the inventory that by using for machine can by change everytime
+
+playbook have one and more play
+playbook
+play--(task,task)
+play--(task,task)
+
+one play is apply in one of group of host
+
+yaml is homan readable language for configuration
+
+
+
+---
+- hosts:all
+  become:yes
+  vars:
+    java_version:10.0.1+10-3ubuntu1
+  tasks:
+    - name: install java
+      apt:
+        name:openjdk-11-jre-headless={{java_version}}
+        update_cache:yes
+    - name: fetch java version
+      shell :java -version
+      register:java_version_output
+      changed_when:False
+    -name:print java version
+     debug: msg="{{ java_version_output['stderr_lines'] }}"	
+	 
+----ansible facts
+--detailed information about each host in play
+--collected automatically by the ' setup module'
+
+for have all this detail, running command 
+ansible all -i inventory -m setup
+
+
+
+
+
+---condition tasks
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: print facts
+      debug: var=ansible_facts
+    - name: identify machines with reduced memory
+      debug: msg="Less than 3GB of RAM"
+      when: ansible_memtotal_mb < 3072
+
+	  
+
+tasks: main entry point; actions to complete
+handlers: conditional tasks,that run if notified
+files: files to deploy to the remote system
+templates:customizable files to deploy
+default:default configuration variables
+vars:high priority configuration variables
+
+
+//using command to load service influxdb 
+ansible server -i inventory -b -m service -a 'name=influxdb'
+
+
+//KEYBOARD USING IN LINUX CERTIFICAT
+la commande pour connaitre ou est situé 
+whoami
+et pour savoir le hostname 
+hostname
+pour voir tous les informations de ce qui se passe sur l'ecran il faut exercuté  la commande:
+top
+putty est uniquement destiné aux utilisateurs de windows qui souhaitent se connecter à 
+une machine linux à partir de windows
+command regarder son addr ip en fonction des commande installer dans notre system
+centos/rhel 5 or 6= ifconfig
+centos/rhel 7 =ip
+centos/rhel 7.5 and up =ifconfig
+command has been deprecated
+to use ifconfig in 7.5 = "yum install net-tools"
+pour acéder au système de fichier de linux il suffit tout d'abord d'exercuté la commande
+cd /    --pour se positionné a la racine de notre project et exercuté la commande
+ls -l pour lister to les fichier qui se trouver a l'interieurs.
+pour voie unique les system de fichier il faut exercuté la commande ls
+
+/boot contain file that is used by the boot loader(grub.cfg)
+/root root user home directory. it is not same as /
+/dev system devices (eg: disk, cdrom,speaker,flashdrive,keyboard etc)
+/etc configuration files
+/bin->/usr/bin     everyday user commands
+/sbin->/usr/sbin   system/filesystem commands
+/opt    optional add-on application(not part of OS apps)
+/proc  running proccesses(only exist in memory)
+/lib ->usr/lib  c programming library files needed by commands and apps
+/tmp directory for temporary files
+/home directory for user
+/var system logs
+/run system daemons that start very early(e.g systemd and udev) to store temporary runtime fileslike PID files
+/mnt to mount external filesystem(e.g.NFS)
+/media for cdrom mount
+
+there are two paths to navigate to a filesystem
+
+/absolute path
+/relative path
+
+an absolute path always begin with a "/" this indicates that the path starts at the root directory
+an example of an absolute path is
+cd /var/log/samba
+
+a relative path does not begin with a "/" it  identifies a location relative to your current position . an example of a 
+relative path is.
+ls -l pour lister les fichier dans un repertoire
+ls -ltr pour lister les fichier  par ordre de creation
+Use the following ls command to count current directory files & folders.  ls -1 | wc -l
+If you need to know how to find a file in Linux called thisfile.txt, it will look for it in current and sub-directories:
+
+find . -name thisfile.txt
+
+Look for all .jpg files in the /home and directories below it.
+find /home -name *.jpg
+to find file run : find . -name name_directories
+different between find and locate.
+find et locate permettent de rechercher des fichiers au sein d'un base de donner.
+lorsque find de creer un fichier, la commande find nous permet de retrouver le fichier alors que la commande locate ne fonctionne plus dans ce ca la.
+maintenant pour faire fonctionner la commande locate il nous suffit de passer en sudo et d'exercuté updatedb avant d'effectuer la recherche
+to change password in linux running
+--passwd
+--entrer old password
+--enter new passwd 
+--retry new passwd
+
+
+a wildcard is a character that can be used as a substitute for any of a class of characters in a search
+ *  -represents zero or more characters
+ ?  -represents a single character
+[]  -represents a range of characters
+
+
+pour creer pludieur fichier qui on presque le meme nom c'est touch abc{1..9}-xyz
+cette commande  doit nous creer les fichier de abc1-xyz jusqu'a abc9-xyz
+la commande ls -l ?bcd* nous permet de listé tous les fichier du nom bcd
+ls -l *[cd] permet de dire que donne moi tout les fichier contient la lettre c ou d
+
+
+exercuté la commande ansible-playbook -i host install.yml --ask-vault-pass cette command permet a ansible de nous demander le mots de 
+passe du vault
+
+//suite 
+pour creer un fichier la commandde touch nam_file
+pour ecrire dans le fichier, la commande echo "mot du fichier " > name_file
+regarder le fichier grace a la commande cat name_file
+pour creer le lien entrer dans le repertoire /tmp avec la commande cd /tmp 
+et exercuter ln /home/nam_use/name_link_file
+to create hard link run command ln 
+to create soft link run command ln -s
+nb:pour creer un lien dans un fichier, il faut allez dans le /tmp
+ensuite exercuté la commande ln -s /home/usename/name_file ie le chemin du fichier ou se trouve le lien 
+en exercuté la commande ls -ltr pour verifier si le lien à été créer
+lorsque j'ecrire dans le fichier source, le lien du fichier est également modifier
+ls -ltri name_file pour verifier les nom des lien des fichier pour voie les different nom en fonction
+des fichier pour voie si les node sont les  meme ou pas il suffit d'exercuté la commande
+ls ltri name_file
+
+---
+ - hosts:ALL
+   tasks:
+     - name: intall ngnix
+	   apt: name=nginx state=present update_cache=yes
+	   
+--chmod command in linux
+the are 3 type of permission
+ r -read
+ w -write
+ x -exercute-running a program
+ 
+ each permission (rwx) can be controlled at three levels
+ u - user=yourself
+ g - group = can be people in the same project
+ 0 - other = everyons on the system 
+ use 
+ chmod =change mode to change mode of file
+ chmod u-r namefile mean remove mode read in file the same for w and x 
+ chmod u+r namefile mean add mode read in file the same for w and x 
+ to add one and more use command chmod u+rw namefile  mean add mode r and w in your app 
+ 0 -- no permission                  -
+ 1 -- exercute                  x
+ 2 -- write                     w
+ 3 -- exercute and write        wx
+ 4 -- read                       r
+ 5 -- read and exercute         rx
+ 6 -- read and write            rw
+ 7 -- read, write and exercute  rwx 
+ 
+ 
+ we quand change the group and the permission of the file system
+ command is chgrp=change groupe chown=change owner
+ syntaxe to change group is  chgrp namegroupe namefile
+ syntaxto change ower is chower  namegroupe namefile
+ 
+ 
+ there are three of help command
+ ---whatis command
+ ---command --help
+ ---man
+  
+ 
+add text in file
+echo "content test" > namafile
+cat namefile using to show file
+using commande ls ltr > filename to put result of list in filename
+
+
+//linux 
+la commande echo " test "  > filemane cette commande creer un fichier mais n'affiche pas les resultat du fichier en console
+alors que  la commande echo "test " | tee filename. creer un fichier et affiche le resultat du fichier en console
+nb: cette | tee remplace le contenu du fichier alors que la commande > ajouter le text demandé dans le fichier
+pour voir le nombre de caractere dans un fichier il faut utilisé la commande
+wc -c pour compter le nombre de caractere dans un fichier . la syntaxe est la suivant:
+ wc -c namefile
+ pour mettre le contenu de ls -l dans nu fichier on peut egalement utilisé la commande ls -l | tee namenewfile
+ using
+ cp to copy content file in order file syntax is cp fileiwanttocopy destinationfile
+ rm remove content file  syntax is rm namefile
+ mv using to rename the file mv oldname newname
+ mkdir using to create directory mkdir nameofdirectory
+ rmdir or rm -r using to remove directory syntax is rmdir namedirectory
+ chgrp using to change moode of file syntax is chgrp namegroupe namefile
+ chown using to change owner of file syntax is chown namegroupe namefile
+ your can move the file in order location using mv filename /tmp
+ using command rm -Rf to remove with sub-directories and its contents as well
+ cat command using to show all content of file
+ more command using to show content of file in one page 
+ less show content of the file
+ head -2 namefile using to show 2 first line of the file
+ tail -2 namefile using to show the 2 end line of the file
+ cut filename does not work 
+ cut --version check version 
+ cut -c1 filename  = list one character
+ cut c1,1,2,4 = pick and chose character
+ cut -c1-3 filename list range of characters 
+ cut -c1-3,6-8 filename list steciffic rang of characters
+ cut -bi-3 list by byte size
+ 
+ this command using to print first colonne of file
+ awk  '{print $1}' namefile
+ to show order conlonne list awk  '{print $2}' namefile 
+ 
+ ls -l | awk '{ print $1,$3}'
+ to search word, using command
+ awk '/jerry/ {print}' file
+ to get lines that have more than 15byte size
+ awk 'length ($0) > 15' filename
+ 
+ grep command which for 'global regular expression print' processor text line by line
+ and prints any lines which match a specified pattern
+ 
+ grep --version to show version of grep
+ to search keyword in the file , using command
+ grep keyword file this command gave all the line have keyword
+ grep -c keyword file this command count number of keyword in file
+ grep -i keyword file search in the file no make distinction between lowercase and uppercase
+ grep -n keyword file
+ grep -vi Music bonjour cette command affiche le contenu
+ d'un fichier en excluant les mots Music
+ grep keyword file | awk '{ print $1}' = search for a keyword and then only 
+ give the first field
+ 
+ la commande ls -l | grep -i desktop est utiliser pour afficher le dossier qui contient 
+ le mots clé Desktop
+to search two keyword, using command 
+egrep -i "keyword1|keyword2" specify name file
+to sort file, using command sort filename
+to sort -r file usint to sort by reverse filename
+ls -l | sort k2 cette command affiche la liste des fichiers en triant le 9 eme fichier
+uniq filename cette commande est utiliser pour affichier le contenu d'un fichier en enlevant les doublure lors de l'affichage
+sort file | uniq cette command trie un fichier et affiche le contenu du fichier de fason unique tout en enlevant les doublure
+sort file | uniq -c cette commande tri le contenu d'un fichier en precissant la recurence des ces nombre dans le fichier
+sort file | uniq -d est utilisé pour afficher unique les ligne qui se repete dans un fichier
+
+wc -l file = get the number of lines in file
+wc -w file = get the number of word in a file
+wc -b file = get the number of bytes in a file
+ls -l | grep drw | wc -l cette commande conte le nombre de fois que 
+je peut retrouver le mots drw dans le fichier ls -l
+ls -l | wc -l conte number of files 
+
+to comparer files using command diff to compare line by line
+and using cmp to compare byte by byte
+syntax
+diff fileone filetwo
+cmp fileone filetwo
+to compresse the files using commande tar or gzip
+to decompresse the files using commande gzip -d or gunzip
+
+syntax
+tar cvf namefile.tar path_file
+ici pour compresser on utiliser la commande tar en creation un nouveau ffichier newfile.tar et endiquant le chemin du fichier que l'on souhaite compresser
+maintenant il nous suffit d'utiliser la commande suivant pour décompresser
+tar xvf namefile.tar path_file
+to compresser file using gzip file.tar
+une fois qu'on a compresser avec tar, on peut encore recompresser avec gzip 
+pour diminuer au maximun la taille du fichier.
+et on moment de décompresser refaire l'operation inverse
+
+la commande truncate est utilisé pour coupé le  contenu d'un fichier
+la syntaxe est la suivant truncate -s 10 filename 10 is the size of file
+to count number line in the folder using commande cat filename | wc -l
+to split content of file using command
+split -l 2 filename namenewfile
+linux and windows comparer
+ls -l      dir
+mv         ren
+cp         copy 
+mv         move
+clear      cls
+rm         del
+diff        fc
+grep       find
+man command   command /?
+pwd           chdir
+date           time
+
+
+1. to add permission for user
+setfacl -m u:user:rwx /path/to/file
+
+2. to add permission for user
+setfacl -m g:group:rw /path/to/file
+
+3. to allow all files or ddirectories to inherit ACL ENTRIES from the directory it is within
+setfacl -dm "entry" /path/to/dir
+
+4. to remove a specific entry
+setfacl -x u:user /path/to/file
+
+5. to remove all entries
+setfacl -b /path/to/file
+to show permission assigne in file using command
+sed 's/name/replacename/g' filename this command replace name by replacename in screen console  . 
+if i want to replace in file ,i'm going to build command 
+sed -i 's/name/replacename/g' filename
+
+if i want to remove word in file, i going to build
+sed -i 's/nameremove//g' filename
+this command remove name nameremove in file
+
+command sed '/namedelete/d' filename this command delete all the lines 
+content namedelete
+pour supprimer les espace dans un fichier,
+il faut utilisr la commande 
+sed '/^$/d' filename this command delete space in file and don't save
+sed -i '/^$/d' filename
+
+using to remove tab space in file sed 's/\t//g' filename
+
+sed -n 12,10p filename
+
+user account command 
+command 
+-useradd
+-groupadd
+-useradd 
+-userdel
+-groupuser
+
+files
+
+/etc/passwd
+/etc/group
+/etc/shodow
+create a group groupadd  namegroup if i want to show group run command cat /etc/group
+create a user useradd nameuser if i want to show user running command id username
+
+
+switch users and sudo access
+commands
+su - username
+sudo command
+visudo
+
+file
+/etc/sudoers
+ to write the message from user run command wall. 
+ then write your message and exite terminal and using command ctrl+d
+ 
+ if i want to write in specify user, i am going run command : write user
+to show all user, run command : users
+
+
+linux account authentication
+
+system utility command
+date using to show date machine
+uptime using to show time system machine
+hostname host user
+uname name machine
+which using to show where is locate command . syntax is : which commandname
+cal using to show calendar
+bc using to show bc calculator
+
+
+
+
+process command.
+
+systemctl
+ps
+top
+kill
+crontab
+at.
+
+
+to show all process is running, run command:ps -ef 
+to show all process is running, run command:ps -ef | grep proccesname
+to stop proccess running command: systemctl stop proccessname
+to kill proccess run command :  kill idprocess
+to set date running command date -s "12 mar 2018 13:20:00"
+
+
+
+
+
+//credenttial to connect in my ssh 
+//using
+
+//first machine
+// host connect host=jumper@tower.watu.fi port=2002
+//password Mont999real///
+
+//my owner marchin  host actor@192.168.1.58
+//my owener password  Mont999real///
+
+//using to split terminal ubuntu
+Ctrl-B% right left
+Ctrl-B 
+
+locate command give my the place of some command in my system
+locate image.jpg
+show : /home/test/image.jpg
+
+
+pour afficher hello et lister tout les element du dossier,
+il suffit pour nous d'exercuter la command echo hello; ls
+
+
+si vous utiliser debian les .deb pour install vous dever utiliser les gestionnaire de package suivant dpkg, apt-get,apt
+si vous utiliser red hat , fedora vous devez utiliser 
+rpm,yum  ou dnf 
+  
+Mont
+
+
+linux wildcard and case sensitivity
+nous avons 
+b??l qui signifie tout les caractere a deux valeur commencant par b et se terminal par l
+b*l signifie tout les caractere commencant par b et se terminant par l
+
+pour supprimer un dossier qui contient les sous dossier il nous suffit d utiliser la command rmdir -p folder
+pour supprimer juste un dossier qui contient des fichier il suffit d utiliser la command rm -r folder
+les dossier ne fonctionne pas avec les hard link mais plutot avec les symbolic link
+
+ls -la b[ao][wl]l.txt cette commande demande de affichier les fichier .txt qui contient entre b et l les lettres des doublure a,o,w ou l tout en faisant les doublure 
+ 
+la command wc -l < ancienfichier >> nouveaufichier signifier conte les element du fichier ancien et met le resultat dans le nouveau fichier
+
+la commande ls video.mpeg blan.foo 2> errors.txt signifie essaye de lister les video.mpeg et blan.foo et s'il ya un erreur renvoyer dans le fichier errors.txt
+ls | head -3 signifie que liste moi les 3 premier fichier du document
+si j'utilise plutot tail -3 c'est pour avoir les 3 dernier fichier 
+pour faire une recherche d'un mot dans un fichier il suffit d'utiliser la command grep mot nomfichier
+pour chercher en precisant la possition du mot il suffit d'utiliser la commande grep -n mot nomfichier
+signifique recherche la ligne qui comprend grep -E '[aeiou]{2,}' namefile signifie rechercher la ligne qui contient au moins deux combinaisson de la chaine suivant: [aeiou]
+
+
+grep -E '2.+' filename signifie que rechercher dans le fichier le ligne qui contient les caracteres commencant par deux et plus
+grep -E '2$' namefile recherche dans le fichier la ligne qui se termine par 2 
+grep -E 'is|go|or' namefile rechercher les ligne qui contient les caractere  is , go ou or
+grep -E '^[A-L]' namefile rechercher dans le fichier tous les caractere qui commence par A jusqu'a L et affichier le resultat
+grep -E '^[A-L]' namefile > file2 trier les caractere qui commence par A jusqu'a L et les mettre dans le fichier file2
+
+quelque commande vi
+x, est utiliser pour supprimer un caractere
+:set nu, set nu cette commande est utiliser pour affichier le numero de ligne
+shift +zz, enregistrer et quitte du terminal
+
+quelaue commande nano
+pour avoir le hostname de ma machine j utilise la commande hostname
+pour avoir la date du jour j'utilise la commande date 
+pour avoir  le temps de demarrage j utilise la commande uptime
+pour verifier le nombre d espace libre dans ma machine j utilise la commande
+df
+
+principe de base pour creer et exercute un script sur linux
+premier des chose changer le mode de fichier en chmod 755 filename
+exemple:  
+
+mkdir $1_$2
+cp -R $1 $1_$2
+echo backup of $1 is now complete
+mettre tout ceci dans un fichier backup.sh
+cette commande  signifie qui creater un dossier et copier le contenu 
+du l'ancien dossier dans le nouveau dossier  
+pour l'exercuter taper juste la commande ./backup.sh
+
+
+avant d exercuter le script n oublier pas de changer le mode
+
+chmod 755 file
+#!/bin/bash
+# simple script pour faire un simple teste de valeur
+
+if [ $1 = '1' ]
+then
+  echo vous avez entrer un bonne value
+exit
+fi
+
+if [ $1 = '2' ]
+then
+  echo votre valeur peut etre accepter par le compilateur
+exit 
+else
+  echo merci ma poter pour cette orientation
+exit
+fi
+
+les different gestionnaire des package en fonction des machine
+fedora c'est dnf pour verifier les fichier qui demande a etre modifier il faut utiliser la command sudo dnf upgrade pour rechecherles package virtual box faire un : dnf search virtualbox
+pour install virtual box il nous suffit dexercuter la commande : sudo dnf install virtualbox-guest-additions
+le noyeau kernel de linux est lancer sur un program situer dans /sbin/init
+pour voir l ensemble des proccessus encou sur linux en ligne de command il suffit pour nous d exercuter la command ps -auxf
+
+
+le fichier de log se situe dans le /var/log
+
+permet a ma machine ne ne plus avoir acces a internet en desactivant son address ip: sudo ip link set enp0s3 down
+
+pour reactiver il nous suffit d utiliser la command sudo ip link set enp0s3 up
+pour ajouter un autre ip addr il suffit d utiliser la command 192.168.1.10/24
+pour recherche un nom dans la liste des utilisateur en affichant la position ou se trouve cette utilisateur il  faut utiliser la command grep '^joel' -nu /etc/password
+pour voir tout les information sur un utilisateur il suffit pour nous d'exercuter la command : sudo chage -l jason
+
+Use the useradd command to add a user: sudo useradd –G new_group user_name
+You can also use the usermod command to add a user to a group:sudo usermod –a –G group_name user_name
+pour changer le group de l utilisateur joel il faut utiliser la commade sudo usermod -l joel groupjoel
+pour change le nom d un group il suffit pour nous d utiliser la commande sudo groupmod -n nouveaunom anciennom
+pour creer utilisateur avec mot de pass il faut: sudo useradd -m joel -p p@$$word
+significatipn de sudo: sudo substitute user do
+
+centos c'est yum
+ubuntu c'est apt
+
+directory
+
+
+Le premier lecteur de disquette est nommé /dev/fd0.
+
+Le second lecteur de disquette est nommé /dev/fd1.
+
+Le premier disque dur détecté est appelé /dev/sda.
+
+Le second disque dur détecté est appelé /dev/sdb, etc.
+
+Le premier lecteur CD SCSI est nommé /dev/scd0, ou encore /dev/sr0. 
+
+
+Les partitions sur chaque disque sont représentées en ajoutant un numéro au 
+
+nom du disque : sda1 et sda2 représentent la première et la seconde partition du premier disque SCSI du système.    
+
+linux/gnu linux est mis sur pied par linus dorvals qui est le nuyeau du system d exploitation
+gnu est un outil en ligne de commande permettant de manipuler le noyeau linux donc gnu sont les outils
+pour creer une alias , exercuter la commande alias t='nomdelacommande'
+pour verifier les type d'une commande cad voir si la commande est interne ou externe,
+il faut exercuter which nomdecommande
+pour lister tous les alias il suffit d'exercuter : alias
+nb: les alias son present en fonction du shell qu'on creer
+different  la locate et find est que :
+1 locate faire une recherche rapide alors find non
+2 find faire un recherche plus approfondir  alors locate non 
+le umask permet de diminuer les permission d'un fichier cela signifie que par defaut les nouveau
+fichier recevrons les permission qui sont contenir dans le umask.
+pour verifier la valeur du umask il nous suffit d4  exercuter la command umask
+pour changer la valeur du umask il nous suffit d exercuter la command umask 0004(0004 represente la nouvelle permission aue nous voulons restrindre)
+sur linux il existe plusieur etat de processus
+D( sommeil interrompu)
+R(fonctionnement)
+S (sommeil interruptible)
+T(arret) et Z(zombie)
+nb: sur linux on peu exercuter des proccessus en avant plan(foreground) et en arriere plan(background)
+un processus d'avant plan est un processus qui empeche l'utiliser le shell jusqu'a ce que le processus soit terminer
+pour exercuter plusieurs commande a la fois il nous suffit de mettre un && entre ces commande.
+pour exemple: whoim && date && ls
+pour exercuter plusieurs commanede successive il nous suffit de faire un 
+whoim ; date ; ls
+
+
+//description de l'arborencense linux
+
+/ : la racine ,elle contient les repertoires principaux
+
+/bin=binaire: contient des exercutable essentiels au systeme et employer par tous les utilisateurs
+
+/dev=devices : contient les points d'entrees des peripheriques, tous les peripheriques
+sont pratiquement tous identiter par un fichier
+
+/etc : editable text configuration: contient les commandes et les fichiers necessaires a 
+l'administrateur du systeme (fichiers,passwd,group,inittab,Id.so.conf,lilo.conf,...)les
+fichiers de configuration ainsi que les fichiers pour initiqaliser 
+les services(reseau,serveur web,ssh,...)
+
+/home: est le repertoire personnel des utilisateurs.
+
+/lib=library contient des bibliotheque partagees essentielles au systeme lors du demarrage,
+l equivalent des DLL.
+
+/media : contient les points montages des peripheriques amovibles(cd-rom,disquette,clef usb)
+
+/opt: contient des packages d applications supplementaires.
+
+/root: est le repertoire de l'administrateur
+
+/sbin (abreviation de system binaire soit systeme des binaire en francais) contient les binaire systeme essentiel, principalement a l usage de 
+l administrateur root (super utilisateur)
+
+/tmp : contient les fichiers temporaires
+
+/usr : hierarchie secondaire(usr comme system resources)
+
+/usr/bin: contient la majoriter des fichiers binaires et commandes utilisateurs  /usr/include
+contient les fichiers d'entete pour les programmes C et C++
+
+/usr/lib: contient la plupart des bibliotheques partagees du systeme /usr/local , contient les
+donner relatives aux programmes installer sur la machine local par le root.
+
+/var : contient des donner variables.
+
+
+ podman stop container-id: using to stop container
+ podman rm container-id: using to remove container
+ 
+ cd /home/tchoufa ou cd ~ me ramene vers mon repertoire courant
+ 
+ cd / me ramene a la racine de mon repertoire
+ 
+ En general dans les systeme linux lorsque un disque dur est monter, il vq s'inserer a l'interieur de notre
+ systeme de fichier. dans ce que on appelle un point de montage .
+ par exemple si j'inserais un cd dans linux, il doit se retrouver dans le repertoire media
+qui contient le dossier cdrom
+
+
+couleur des repertoire sous linux.
+
+vert = quelque chose qui est exercutable
+bleu = dossier
+blank = fichier
+rouge = fichier compresser
+les couleur siant son ce qui correspond a un lien  symbolique
+les couleur de commande avec un ariere plan rouge et un avant plan blanc
+signifie qu'on a poser un suid sur cette commande
+
+le repertoire /sys represente un espace d'echange plutot systeme entre les applications
+le repertoire /tmp est un repertoire temporaire car il peux arriver que des application depose
+des fichier dans ce repertoire
+
+/usr contient generalement les binaire installer par l'utilisateur
+
+le repertoire /var contient les informations journaliser et les logs de notre repertoire
+
+le repertoire courant s'exprime avec un point 
+
+pour affichier une variable d'environnement il faut utiliser la commande 
+printenv PATH
+echo $PATH
+ 
+ 
+ Pour ajouter une commande dansle parmi les variable d'environnement il faut exercuter 
+ la commande export PATH=$PATH:/home/tchoufa
+ 
+ 
+ pour avoir les information par rapport a ce qui se passe dans le systeme il faut utiliser 
+ la commande tail /var/log/syslog
+ lorsque les commande parte dans l'history des commande on peut rappeller les commande 
+ en exercutant par exemple !numero_de_commmande_qui_est_dans_history.
+ 
+ umask correspondence
+ 
+ umask				created file		created directories
+ 000				666						777
+ 002				664						775
+ 022				644						755
+ 027				640						750
+ 077				600						700
+ 277				400						500
+ 
+ 
+pour changer les permission d'un dossier et de ces sous dossier
+il faut utiliser la commande chmod -R o-rw dossier/
+
+
+find /etc -type f -name "cron*" -print:cette commande signifie,vas dans le repertoire /etc
+recherche les fichier donc le nom commence par cron et affichier
+
+la commande find /home/tchoufa -iname "[pt]louf\txt" -print : demande a l'utilisateur de chercher tous les fichier ddonc le nom commence par soit p ou t et les affichier
+
+on peut egalement faire une recherche a partie d'un repertoire en utilisant la commande:
+
+find /homee/tchoufa -path /home/*/plouf.txt -print
+
+lname c'est pour rechercher dans les signes des lien symboliques
+
+on peut faire une recherche du type de fichier en utilsant la commande :
+find home /-name rudi -type f -print
+
+on peut faire un recherche sur le type de repertoire :
+find home /-name rudi -type d -print
+
+pour faire une recherche dans le repertoire courant de la liste des fichiers qui on ete 
+acceder il ya moins d'une minute il faut exercuter la commande :
+sudo find . -amin 1 -print
+
+pour rechercher tout les fichiers qui on ete acceder apres fstab , il faut exercuter la 
+commande : sudo find . -anewer fstab -print
+
+on peut egalement faire une recherche par taille
+
+find . -size 12k -print: cherche moi les fichiers qui font 12k
+
+sudo find . -empty -name source -print : cette commande permet de rechercher tout les fichier vide qui contient le nom 
+source
+
+pour verifier quelle groupe auquelle appartient un utilisateur il faut exercuter la commande:
+
+id nG tchoufa //ici on affiche tout les groups auquelle appartient l'utilisateur joel
+pour changer le propretaire d'un document, la commande est: sudo chown -R root.root Documents/
+
+la commande tar xvzf fichier.tar.gz permet de decompression une archive et  de le 
+mettre dans un le repertoire courant.
+
+x=extra
+v=verbose
+z=gzip
+f=file
+
+pour compresser il serai maintenant mieux d'utiliser la commande :
+tar cvzf namefiletocompress dossier/ //dossier est le nom du repertoire que j'ai
+envie de deposer le fichier apres la compression
+
+c=compress
+v=verbose
+z=gzip
+f=file
+
+
+pour rechercher dans un fichier tout les lignes qui commence par # dans un fichier
+il faut utiliser la commande:
+grep "^#" fstab.
+
+pour recherche lesligne qui ne comporte qu'un # il faut utiliser la commande
+grep "^#$" fstab
+
+pour rechercher tout les lignes qui ne comporte pas print il faut utiliser la commande
+grep -iv "Print" fstab
+
+pour rechercher tout les ligne qui contient le caractere print il faut utiliser 
+la commande grep -i "Print" fstab
+
+pour avoir avec le nombre de ligne qui on ete trouver utiliser l'argument c comme ceci
+
+grep -ivc "Print" fstab
+
+la commande ls [^ws]?? nous permet de rechercher tout les fichiers au repertoire 
+que la premier lettre ne doit pas etre soit w ou un s
+
+
+ls * la commande si permet de rechercher tout les fichier et les repertoire ,leur
+affichier
+
+pour verifier si on a encore de l'espace disque il utiliser la commande:
+df=disk free
+
+pour savoir combien  d'espace prend un repertoire coursnt il faut utiliser la commande
+du=disk use
+du -h
+
+sudo select-editor
+
+find ~ -type f -exec grep -il 'term' {} \;
+pour voir le contenu d'un fichier compresser il faut utiliser la commande:
+tar -tzvf namefile.tar.gz
+tar = tape archive
+
+
+le premier noysu linux etait le 0.0.1 et il est sorti en septembre 1991
+git a ete creer par linus torvald pour gerer le developpement commun du noyau
+pstree : est une commande utiliser pour voir l'arbre des prossesus du systeme
+
+pour avoir l'arborescence de ce qui c'est passer il faut lancer la commande : pstree -h
+
+tty: signifie terminal de controle
+
+
+ps a a=all // voir tout les processuse qui on ete lancer par des utilisateur meme si c'est 
+n'est pas nous .
+ps u u=user //ceci toi ajouter des information sur les processeur et les utilisateur
+
+ps x //affiche avec les processus qui n'on pas un terminal de controle
+
+mais cette syntaxe nous permet de tous voir sur les processus
+
+
+
+ps -e = pour avoir les informations
+ps -ef = pour avoir une version full des information 
+ps -el= pour avoir une version longue des information
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+   
+ 
+ 
+ podman rm container-id-1 container-id-2 container-id-3: using to remove multiple container
+ podman -rmi image-id : to remove image
+ podman stop container-id: using to stop container
+ 
+ 
+ nb: dans un fichier docker le container est l 'instance de l'image pour l'exercution
+ 
+
+les repertoires sur linux sont utiliser pour fournir une structure d'organisation hierachique.
+pour telecharger une image il faut utiliser la commande 
+docker pull nomdeimage.
+pour affichier tout les container et meme les container cache il faut utiliser la commande 
+
+podman ps -a
+
+pour forcer la suppression d'un image il faut utiliser la commande 
+
+podman rmi -f nomdelimage
+
+
+
+podman search : command allows you to search selected remote registries for container images.
+the default list of registries is defined in the registries.conf file located in the /etc/containers/ directory.
+
+
+pour voir l'usage de la commande il faut exercuter
+podman --help | more
+
+pour avoir de l'aide assosier a un contexte on peut utiliser la commande 
+podman container --help | more //ici notre contexte c'est container
+
+la commande podman ps affichie tout les container en cours d'exercution
+
+pour avoir les information par rapport a la commande run de podman on peut exercuter la commande
+
+podman container run --help | more
+
+
+pour utiliser podman pour telecharger et utiliser un image il faut faire
+
+//cette commande telecharger une image ubuntu
+podman run ubuntu
+
+//cette commande permet de lancer le terminal (t ) en mode interactive(i)
+podman run -ti ubuntu
+
+//pour verifier que on bien un bash qui s'exercute dans  le container il faut lancer 
+la commande :ps
+
+//pour voir il faut utiliser la commande hostname
+hostname 
+
+
+// il faut lancer container avec la commande 
+podman run it ubuntu si on ne precise pas le bash par defaut c'est le bash /bin/bash qui est
+exercuter
+
+pour lancer un container tout en precisant sont nom de l image et le nom du host il faut utiliser la 
+commande 
+
+podman run --name=cont01 --hostname==host01 -it ubuntu
+
+et peut faire les verification en faissant podman ps -a pour verifier sont nom
+
+pour lancer un container en mode detacher il faut exercuter la commande:
+podman run -d -it centos ping 127.0.1
+et pour verifier s'il s'exercute il faut lancer la commande 
+podman logs container-idd
+
+pour passer en mode avant plan il faut lancer la commande : podman attach container-id
+
+podman run -d -P nginx pour lancer l image ngnix du container
+
+pour arreter un container il faut faire: podman start/stop container-id
+start/stop //pour arreter et redemarrer un container
+
+pour lancer un autre proccessus dans un container il faut utiliser la commande
+podman exec -it host02 bash //l'autre processus ici est bash
+
+pour verifier il faut lancer la commande ps -ef  pour voir tout les processus encourt d'exercution
+pout verifier le status d'un container on utiliser la commande:
+
+podman inspect --format='{{state.status}}' web03//web03 est le nom du container
+
+pour verifier l ip du container il faut utiliser la commande :
+podman inspect --format='{{NetworkSettings.IPAddress}}' web03
+
+pour  inspecter un tableau en entier des information il faut utiliser 
+
+podman inspect --format='{{json .State}}' web03
+
+podman ps -l permet d'affichier le dernier container creer
+
+pour affichier uniquement l'id des container il faut utiliser la commande 
+podman ps -q
+
+
+on peut egalement filtrer la sorti des container
+podman ps -a --filter name=web//cette commande affiche tout les container qui porte le nom web
+
+pour supprimer tout les container qui sont arreter il fauqt utiliser la commande
+podman rm $(podman ps -aq --filter status=exited)
+
+pour verifier les modifications qui on ete fait il faut exercuter la commande
+podman diff centos
+
+pour valider les modification et creer sa propre image il faut exercuter la commande
+
+podman commit centos masociete/moncentos:1.0
+
+procedure de creation de notre propre dockerfile est:
+
+mkdir appli
+cd appli
+vi Dockerfile 
+// le contenu de notre docker file est 
+FROM centos 
+RUN yum install -y wget 
+RUN yum install -y zip
+//pour build notre docker file a partie d une image
+docker build -t masociete/mycentos:1.0 .
+
+
+
+
+pour avoir les information sur l'history des images qui on ete  creer exercute la commande
+podman history masociete/moncentos:1.0
+GNU est un système d'exploitation composé exclusivement de logiciels libres. 
+Son nom est un acronyme récursif qui signifie en anglais "Gnu's Not Unix" (littéralement, GNU N'est pas UNIX[1]) en référence d'une part à sa similitude
+
+la permission segid sur un repertoire fait que les fichiers creer dans le repertoire appartient au group qui possede le repertoire.
+
+faire une double redirection( le message d'erreur et le standard de sorti il faut utiliser laa commande suivante)
+ls junk /etc/perl/ &> tworec
+ici le message d'erreur et le message de sorti sera rediriger vers tworec grace a &>
+
+on peut egalement faire une double redirection en utilisant :
+ls junk /etc/perl > stdout 2>stderr
+ici on redirige le stdout de /etc/perl dans le fichier stdout car ce dernierne ne doit pas produire des erreurs
+et on rediger l'erreur que doit produire junk dans le fichier stderr
+
+la commande tr: signifie tranpose  par exemple cette commande peut prendre les valeur
+entre en majuscule et faire un retoure des valeur en minuscule
+ex: tr 'a-z' 'A-Z'
+ou peut l'utiliser egalement pour traduire le contenu d'un fichier comme suit:
+tr 'a-z' 'A-Z' < filename
+
+/usr contient les application installer pr l'utilisateur
+
+les expressions regulieres, egalemenr regex, sont un ensemble de caractere normaux et speciaux
+qui sont utiliser regex , sont un ensemble de caractere normaux et speciaux qui sont utilises pour trouver
+des motifs simples ou complexes respectivement, dans un fichiers.
+
+on distingue deux type d'expression regulier. les expression reguliere simple
+et les expression reguliere etandu
+
+les expression reguliere de base sont les suivant:
+[],*,^$
+pour faire un recherche un mot ou une ligne dans un fichier on faire appelle
+aux expression regulier de base
+utilisation des ces expressions reguliere
+le caractere . (correspond a n'importe qu'elle caractere)
+grep r..t file: ici on recherche dans le fichier le le mot 
+qui commence par r et  se termine par t dans le fichier file
+ayant deux caractere au milieu
+
+
+
+-- le crochet [] correspondent a un seul caractere de liste ou 
+de la plage de caractere possible contenus dans les crochets.
+
+-- chaque caractere possible peut etre lister [abcd] ou fourni
+sous la forme d'une plage [a-d], condition que la plage soit
+dans le bon ordre.
+
+
+pour affichier la ligne qui contient les caractere entre '[0-9]' il faut exercute:
+grep '[0-9]' filename
+em ajoutant ^ ceci nous permet de faire une negation
+le caratere circonflexe ^ est utiliser pour s'assurer qu'un motif apparait au bebut de la ligne
+le deuxieme caractere $ peut etre utilise pour s'assurer qu'un motif apparait a la fin de ligne
+
+ex: grep '^root' filename //cette expression nous donne tous les ligne qui commence par le mot root.
+ex2: grep 'root$' filename // cette expression nous donne tous les lignes qui se termine par root.
+
+autre expression regulier de base c'est \.
+la commande grep 'ro\*' filename recherche le mots ro* dans le fichier filename
+
+l'option -E de la commande grep permet de comprendre les expressions regulieres etendues.
+
+les expressions reguliers suivantes sont considerees comme etendues:
+
+-- ? correspond au caractere precedent zero ou une fois, donc c'est un caractere optionnel
+-- + correspond au caractere precedent repeter une ou plusieurs fois
+-- | alternance ou comme une logique ou un operateur
+
+
+ex: grep -E 's?p' filename permet d'afficher la il qui contient les caractere commencant par s et se terminant par p.
+grep -E 'm+' filename permet d'affichier les ligne qui contient le caractere m une ou plusieur fois.
+grep -E 'sys|sync' filename permet d'affichier les ligne qui contiennent le mot sys ou sync
+
+FHS
+
+vi version 2
+tout abord la premier chose a connaitre es que l'editeur vi presente 3 modes:
+-- le mode de commande
+-- le mode d'insertion
+-- le mode de sortie
+
+mode de commande touche de mouvement:
+h  		a gouche un caractere
+j		en bas sur une ligne
+k		en haut sur une ligne
+l		a droit a un seul caractere
+w		un mot en avant
+b		un mot en retour
+^		debut de ligne
+$		fin de la ligne
+
+
+//vi commande
+5h deplace le curseur de cinq caractere vers la gauche , 3w deplace le curseur de trois 
+mots vers la droit
+pour deplacer le curseur sur un numero de ligne specifique, tapez ce numero de ligne
+suivi de caractere G.
+
+//pour accerder la 5 eme ligne du fichier taper 5G
+1G ou gg peut etre utiliser pour allez a la premiere ligne du fichier alors que
+G simple vous menera a la derniere ligne du fichiers
+
+
+les actions sur l'editeur vi sont :
+
+cut 		d  			delete
+copy 		y      		yank
+paste 		P/p  		put put
+
+
+le tableau suivant donne quelques exemples d'utilisation courante.
+
+dd 		effacer la ligne courante
+3dd		supprimer les trois lignes suivantes
+dw		supprimer le mot courant
+d3w		supprimer les trois mot suivanrs
+d4h		effacer quatre caractere a gauche
+
+
+changer
+changer est tres similaire a effacer,
+memoire tampon, mais le programme
+changement immediat d'un programme a l'autre.
+
+
+cc			changer current line 
+cw			changer le mot courant
+c3w			changer les trois mots suivants
+c5h			changer cinq caracteres vers la gauche
+
+
+yank(copier)
+
+yank ou copier place le contenu dans le tampon sans le supprimer
+
+yy      copier la ligne de courante
+3yy		copier les trois prochaines lignes
+yw		copier le mot courant
+y$$		copier la fin de la ligne
+
+
+nb: echo $0 est un commande du bash qui indique quelle commande est entrain de etre exercuter
+
+
+pour creer un script linux.
+
+declaration des variable
+mes='message'
+
+utilisation de la variable
+$mes
+${mes}
+
+un=1
+deux=2
+
+trois=$(($un+$deux))
+echo $trois
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+   
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+	  
+
+
+
+
+
+
+
+
+	  
+
+
+
+		  
+  
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
