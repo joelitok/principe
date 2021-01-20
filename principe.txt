@@ -1361,7 +1361,7 @@ find . -name thisfile.txt
 
 Look for all .jpg files in the /home and directories below it.
 find /home -name *.jpg
-to find file run : find . -name name_directories
+to find file run : find . -name name_directories 
 different between find and locate.
 find et locate permettent de rechercher des fichiers au sein d'un base de donner.
 lorsque find de creer un fichier, la commande find nous permet de retrouver le fichier alors que la commande locate ne fonctionne plus dans ce ca la.
@@ -2360,6 +2360,145 @@ deux=2
 
 trois=$(($un+$deux))
 echo $trois
+
+//pour supprimer un utilisateur et son repertoire il suffit d'exercute la commande
+sudo deluser --remove-home joel
+
+
+pour modifier l'interface reseau il faut allez dans le fichier  /etc/network/interfaces
+et ecrire les instruction suivants:
+
+auto enp0s3
+iface enp0s3 inet static
+address 192.168.1.1
+netmask 255.255.255.0
+getway 192.168.1.254
+
+ensuite redemarrer le processus qui s'occupe des interface
+avec la commande: sudo service networking restart
+
+//si le service n'a pas toujour redemmarer il faut exercute la commande:
+sudo ifdown enp0s3
+sudo ifup enp0s3
+la commande crontab -l nous permet de visualiser les crontab qui existent deja
+pour mettre une crontab sur pied il faut exercuter crontab -e
+28 18 ***
+28=minute
+18=heur
+* = tour les jours
+* = chaque moi 
+* = chaque annee
+
+
+Pour faire un transfert de fichier dans le reseau entre deux machine
+il faut utiliser la commande
+se position dans le repertoire courant et faire
+scp namefile joel@192.168.1.31:/home/tchoufa/bureau
+
+//manipulation des script shell
+[ -e /home/tchoufa/joel]
+
+-e:0(true) si le fichier existe
+-d:0 (true) s'il s'agit d'un dossier
+-r:0 (true) si le fichier est disponible en lecture pour l'utilisateur
+-s:0 (true) si le fichier existe et n'est pas vide
+-w:0 (true) si le fichier est disponible en ecriture pour l'utilisateur
+-x:0 (true) si le fichier est disponible en exercution pour l'utilisateur
+-z nous permet d'effectuer des teste sur des chaine de caractere
+
+le commande qui permet a l'utilisateur d'entre des donnees c'est la commande read.
+
+#!/bin/bash
+echo "quel est votre prenom ?"
+read PRENOM
+echo "votre prenom est $PRENOM"
+
+pour ecrire tout ceci en une seul ligne il suffit de :
+read -p "quel est votre prenom ?" PRENOM
+echo "votre prenom est donc: $PRENOM"
+
+pour faire un teste de demander le prenom de l'utilisateur a l'infinie de telque 
+s'il n'a pas entre de prenom on ne sort pas de la boucle on l'effectue comme suit:
+
+while [ -z $PRENOM ]
+
+do
+read -p "quel est votre prenom ? " PRENOM
+done
+
+echo "votre prenom est : $PRENOM"
+
+
+fonction shell pour tester la connection avec google
+
+function internet(){
+ping -c $1 $2
+
+if[ $? -eq 0 ]
+then 
+		echo "la connextion vers internet est etablie"
+else
+		echo "la connexion version internet n'est pas "
+fi
+
+}
+internet "1" "8.8.8.8"
+		
+
+
+#!/bin/bash
+VARIABLE="joel"
+
+function demonstration(){
+		echo "la variable $VARIABLE  est utilisable"
+		local VAR // le mot cle local est utiliser pour limiter la porter de la variable
+}
+
+
+
+
+il existe des caratere predefinies
+[[:alpha:]]: toutes les lettres de l alphabet(minuscules et majuscules)
+[[:alnum:]]: toutes les lettres de l alphabet(minuscules et majuscules) ainisi que tous les chiffres ( 0 a 9)
+[[:digit:]]: tous les chiffres de 0 a 9
+[[:upper:]]: toutes les lettres de l'alphabet en majuscule
+[[:lower:]]: toutes les lettres de l'alphabet en minuscule
+[[:space:]] : tous les caractere d'espacement (espace,tabulation,nouvelle ligne, etc...)
+
+ex d'utilisation: ls -l [[:digit:]]joel
+
+
+simple code pour demarer et stopper un processus
+
+case "$1" in 
+		start)
+		    /etc/init.d/apache2 start
+		    ;;
+		stop)
+		    /kill $(cat /var/run/apache2/apache2.pid)
+			;;
+		   *)
+		   echo "merci d'indiquer start ou stop"
+		   exit 1
+		   ;;
+esac
+
+on peut egalement presiser le nom de la variable lorsque on declare
+typeset -a NOM_DE_VARIABLE: tableau
+typeset -i NOM_DE_VARIABLE: entier
+typeset -r NOM_DE_VARIABLE: readonly
+typeset -x NOM_DE_VARIABLE: export
+
+
+autre utilisation de la commande sed
+sed '8 d' text.txt signifie renvoie tout le contenue du fichier text.txt sauf la ligne 8
+sed '2 d; 8 d' text.txt pour supprimer la ligne 2 et 8 dans le fichier
+sed '1,3 d' text.txt pour supprimer toute les lignes 1 2 et 3
+sed '/^#/d' text.txt pour supprimer toute les lignes qui commence par #
+sed '/^$/d' text.txt pour supprimer les ligne vide dans un fichier
+sed 'y/éè/ee' text.txt pour ramplacer les e accentués par les e sans accents
+
+
 
 
 
