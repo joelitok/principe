@@ -462,10 +462,10 @@ cela cause
  
  ****************************************************** pour deployer mon application laravel sur heroku **********************************************
  pour deployer sur heroku:
- 1_ heroku login
- 2_ heroku create
+ 1_ heroku login //pour ce connecter a son compte heroku 
+ 2_ heroku create //creer le projet sur heroku
  3_ git remote -v// pour verifier si mon gestionnaire de dependance est bien sur la branche souhaiter
- 4_change key php artisan key:generate
+ 4_ php artisan key:generate //pour changer le key 
  5_ heroku config:set APP_KEY=cle qui est dans le fichier .env de notre fichier laravel
  
  //pour cette etapes je dois d'abord allez selectionner ma base de données postgress qui se trouve dans  et configurer les parametre
@@ -1513,7 +1513,7 @@ wc -c pour compter le nombre de caractere dans un fichier . la syntaxe est la su
 to search two keyword, using command 
 egrep -i "keyword1|keyword2" specify name file
 to sort file, using command sort filename
-to sort -r file usint to sort by reverse filename
+to sort -r file using to sort by reverse filename
 ls -l | sort k2 cette command affiche la liste des fichiers en triant le 9 eme fichier
 uniq filename cette commande est utiliser pour affichier le contenu d'un fichier en enlevant les doublure lors de l'affichage
 sort file | uniq cette command trie un fichier et affiche le contenu du fichier de fason unique tout en enlevant les doublure
@@ -1570,7 +1570,7 @@ setfacl -m u:user:rwx /path/to/file
 2. to add permission for user
 setfacl -m g:group:rw /path/to/file
 
-3. to allow all files or ddirectories to inherit ACL ENTRIES from the directory it is within
+3. to allow all files or directories to inherit ACL ENTRIES from the directory it is within
 setfacl -dm "entry" /path/to/dir
 
 4. to remove a specific entry
@@ -1944,7 +1944,7 @@ il faut utiliser la commande chmod -R o-rw dossier/
 find /etc -type f -name "cron*" -print:cette commande signifie,vas dans le repertoire /etc
 recherche les fichier donc le nom commence par cron et affichier
 
-la commande find /home/tchoufa -iname "[pt]louf\txt" -print : demande a l'utilisateur de chercher tous les fichier ddonc le nom commence par soit p ou t et les affichier
+la commande find /home/tchoufa -iname "[pt]louf\txt" -print : demande a l'utilisateur de chercher tous les fichier donc le nom commence par soit p ou t et les affichier
 
 on peut egalement faire une recherche a partie d'un repertoire en utilisant la commande:
 
@@ -2022,13 +2022,13 @@ affichier
 pour verifier si on a encore de l'espace disque il utiliser la commande:
 df=disk free
 
-pour savoir combien  d'espace prend un repertoire coursnt il faut utiliser la commande
+pour savoir combien  d'espace prend un repertoire courant il faut utiliser la commande
 du=disk use
 du -h
 
 sudo select-editor
 
-find ~ -type f -exec grep -il 'term' {} \;
+find ~ -type f -exec grep -il 'term' {} \; 
 pour voir le contenu d'un fichier compresser il faut utiliser la commande:
 tar -tzvf namefile.tar.gz
 tar = tape archive
@@ -2412,7 +2412,7 @@ le commande qui permet a l'utilisateur d'entre des donnees c'est la commande rea
 echo "quel est votre prenom ?"
 read PRENOM
 echo "votre prenom est $PRENOM"
-
+1111 11111111 11111111 11111111
 pour ecrire tout ceci en une seul ligne il suffit de :
 read -p "quel est votre prenom ?" PRENOM
 echo "votre prenom est donc: $PRENOM"
@@ -2501,33 +2501,502 @@ sed 'y/éè/ee' text.txt pour ramplacer les e accentués par les e sans accents
 
 
 
+dpkg et apt-get propre a debian
+rpm, yum et dnf propre a red hat
+
+l'application de la suite libreOffice qui est utiliser comme feuilles de calcul electroniques est: calc
+l'application la plus populaire pour l'edition de fichier SVG sur les systemes linux est : lnkscape
+
+
+png---- Gimp
+doc---- libreOffice Writer
+xls---- LibreOffice Calc
+ppt---- LibreOffice Impress
+wav---- Audace
+
+le progiciel qui permet le partage de fichiers entre les machines linux et windows sur le reseau local est: samba
+
+
+les quatre libertes telles que definies par richard stallman et la free software foundation
+--liberte d'exercuter le logiciel
+--etudier et modifier le logiciel
+--distribuer le logiciel 
+--distribuer le logiciel modifier
+
+
+signification de FLOSS
+
+free/libre open source software
+
+pour s'assurer que tout les logiciel developper autour de mon logiciel soit egalement gratuit, il suffit de lui mettre sur 
+GPLversion3
+
+deux exemples copyleft: GPLversion3,CC BY-SA
+deux exemple de licenses permissive : CC BY, Simplified BSD license
+
+
+vous avez ecrit une application web et l'avez publiee sous licence gratuite.
+offrir l'hebergement ,le service et le support
+developper des extensions proprietaire pour les clients
+
+nommons trois exemples de logiciel libres qui sont egalement proposes en business edition
+par exemple dans une version payante: MySQL,Zammad,Nextcloud
+
+beamer: un outil de presentation laTeX
+
+vous devez utiliser une fenetre privee dans un navigateur si vous souhaiter:
+pour ne laisser aucune trace sur l'ordinateur que vous utilisez
+
+Qu'est-ce qu'openstack : un projet qui permet la creation d'IaaS privees
+
+les logiciels de chiffrement de disque valide sont: EncFS et dm-crypt 
+supprimer tous les fichiers dans ma corbeille en ligne de commande: 
+rm -rf ~/.local/share/Trash/*
+
+
+le Filesystem Hierarchy Standard (FHS) est un ensemble de normes supportees par la linux Foundation.
+
+le proccessus de demarrage 
+le processus de demarrage se deroule en quatre etapes principales dont certaines sont modifiees par les administrateurs,
+tandis que pour les autres il suffit d'etre au courant des actions en cours.
+
+1--etape de firmware
+2-- bootloader(GRUB)
+3--Stade du noyau
+4--Etape d'initialisation
+//
+1--Bios ou encore etapes du micrologiciel
+
+l'etapes du micrologiciel est la premiere etapes qui a lieu apres la mise sous tension de l'ordinateur. a ce stade, l'ordinateur 
+est sous tension mais a besoin de commencer a exercuter un logiciel qui finira par demarrer un noyau complet.
+BIOS (UEFI)= Basic input /output system ,systeme elementaire d'entree/sortie. c'est un ensemble de fonctions contenu dans la memoire
+morte (ROM) de la carte mere d'un ordinateur lui permettant d'effectuer des operations elementaires lors de sa mise sous tension.
+lorsque le bios est lancer , la premiere des choses qu'il fait est d'exercuter des operations de verification de l'integrite du systeme.
+pour ce faire il doit lancer ce que on appelle le  POST le role du poste est d'execute l'ensemble des composant interne(CPU,RAM,Disque dur...). maintenant si le post verifie et que 
+l'integrite du systeme est ok, on peut pas maintenant a chercher,charge et exercute le programme d'amorcage
+
+
+
+--la tache finale du bios est de trouver le lecteur de demarrage approprie 
+a partir des peripheriques de stockage disponibles et charger le disque de demarrage
+principale (MBR) a partir de ce peripherique 
+
+
+le disque d'initialisation principale est le premier secteur (ou 512bytes) du disque
+il contient une table de partition et une tres petite quantite de code executable
+appelle la premiere etape plus riche en fonctionnalites(GRUB ou LILO) 
+
+2--etape du chargeur de demarrage
+le role du MBR de allez chercher le chargeur d'amorcage(bootloader)
+le bootloader effectuera plusieurs operations, mais la tache principale est de charger le noyau linux dans 
+la memoire RAM et de l'exercuter.
+une fois que cela s'est produit le noyau prend le relais pour demarrer le systeme
+
+
+le role du bootloader est d'aller cherche ou se trouve le noyau (KERNEL) sur le disque dur pour le charger
+en memoire vive c'est a dire la RAM ( 
+la raison pour laquelle il vas chercher pour l'exercuter plustot en memoire vive est que 
+la memoire ram est plus rapide que la memoire ROM (disque dur)
+)
+
+le bootloaders les plus utilises sur les machines sont le linux loader(LILO) et le 
+Grand Unified Bootloader(GRUB)
+
+
+//echanger de fichier entre deux machine linux.
+
+pour copier un fichier vers un autre ordinateur.
+scp image.png mateo21@85.123.10.201:/home/meteo21/image
+
+
+pour recuperer un fichier se trouvant dans un autre ordinateur
+scp mateo21@85.123.10.201:image.png copie_image_sur_mon_pc.png
+
+si le serveur sur lequelle nous essayons de nous connecter n'a pas de port , on vera mieux d'indiquer un port.
+cela peu ce faire comme suit: 
+scp -P 16296 meteo21@85.123.10.201:image.png
+
+1--1
+Tout comme une distribution, un package est un ensemble de logiciels et une configuration et une documentation correspondantes 
+qui facilitent l'installation, la mise à jour et l'utilisation du logiciel par l'utilisateur.
+
+ 
+ À cette époque, Unix n'était pas disponible sur les petits ordinateurs comme les ordinateurs de bureau basés 
+ sur la plate-forme x86. C'est pourquoi Linus, qui était étudiant à cette époque,
+ a commencé à implémenter un système d'exploitation de type Unix qui était censé fonctionner sur cette plate-forme.
+ 
+ La plupart du temps, Linux utilise les mêmes principes et idées de base d'Unix, mais Linux lui-même ne contient pas de code Unix, 
+ car il s'agit d'un projet indépendant. Linux n'est pas soutenu par une entreprise individuelle mais par une communauté internationale de programmeurs. 
+ Comme il est disponible gratuitement, il peut être utilisé par n'importe qui sans restrictions.
+ 
+ 
+La distribution Debian GNU / Linux est la plus grande distribution de la famille de distribution Debian.
+
+Le projet Debian GNU / Linux a été lancé par Ian Murdock en 1993. 
+
+ Il promeut également la vision de Richard Stallman d'un système 
+ d'exploitation qui respecte les libertés de l'utilisateur d'exécuter, d'étudier, de distribuer et d'améliorer le logiciel.
+
+ 
+ Ubuntu est une autre distribution basée sur Debian qui mérite d'être mentionnée.
+ Ubuntu a été créé par Mark Shuttleworth et son équipe en 2004, 
+ avec pour mission d'apporter un environnement de bureau Linux facile à utiliser.
+ La distribution a une version planifiée tous les six mois avec une version de support à long terme tous les 2 ans.
+ 
+ Red Hat est une distribution Linux développée et maintenue 
+ par la société de logiciels du même nom, qui a été acquise par IBM en 2019.
+ 
+ 
+  La distribution Red Hat Linux a été lancée en 1994 et renommée en 2003 en Red Hat Enterprise Linux , souvent abrégée RHEL.
+  
+  
+   Le projet CentOS utilise le code source disponible gratuitement de Red Hat Enterprise Linux et le compile dans une distribution 
+   qui est disponible entièrement gratuitement, mais en retour ne vient pas avec un support commercial.
+   
+   
+   RHEL et CentOS sont optimisés pour une utilisation dans des environnements de serveur. Le projet Fedora a été fondé en 2003
+   et crée une distribution Linux destinée aux ordinateurs de bureau.
+   
+   
+ Toutes les distributions basées sur Red Hat utilisent le format de package rpm
+
+
+ La société SUSE a été fondée en 1992 en Allemagne en tant que fournisseur de services Unix.
+ 
+ La première version de SUSE Linux a été publiée en 1994. Au fil des années, 
+ SUSE Linux est devenu surtout connu pour son outil de configuration YaST.
+ 
+  Récemment, diverses très petites distributions Linux sont conçues pour s'exécuter spécifiquement dans des conteneurs Linux, 
+  tels que Docker. Il existe également des distributions spécialement conçues pour les composants de systèmes embarqués et même les appareils intelligents.
+  
+  Les systèmes embarqués se retrouvent dans les applications automobiles, médicales et même militaires
+  
+  Deux des projets de logiciels embarqués les plus populaires sont Android, qui est principalement utilisé 
+  sur les téléphones mobiles par divers fournisseurs et Raspbian, qui est principalement utilisé sur Raspberry Pi.
+
+Android est principalement un système d'exploitation mobile développé par Google.
+
+Android Inc. a été fondée en 2003 à Palo Alto, en Californie.. La société a initialement créé 
+un système d'exploitation destiné à fonctionner sur des appareils photo numériques. 
+En 2005, Google a acheté Android Inc. et l'a développé pour devenir l'un des plus grands systèmes d'exploitation mobiles.
+
+La base d'Android est une version modifiée du noyau Linux avec des logiciels open source supplémentaires.
+
+
+
+Android est disponible gratuitement en open source sous le nom de projet Open Source Android (AOSP). 
+Google propose une série de composants propriétaires en plus du noyau open source d'Android. 
+Ces composants incluent des applications telles que Google Agenda, Google Maps, Google Mail, 
+le navigateur Chrome ainsi que le Google Play Store qui facilite l'installation facile des applications.
+La plupart des utilisateurs considèrent ces outils comme faisant partie intégrante de leur expérience Android.
+Par conséquent, presque tous les appareils mobiles livrés avec Android en Europe et en Amérique incluent un logiciel Google propriétaire.
 
 
 
 
+Android sur les appareils embarqués présente de nombreux avantages. Le système d'exploitation est intuitif 
+et facile à utiliser avec une interface utilisateur graphique, il dispose d'une communauté de développeurs
+très large, il est donc facile de trouver de l'aide pour le développement. Il est également pris en charge
+par la majorité des fournisseurs de matériel avec un pilote Android, il est donc facile et rentable de prototyper un système entier.
+
+
+Raspberry Pi est un ordinateur de la taille d'une carte de crédit à faible coût qui peut fonctionner comme un ordinateur de bureau à 
+fonctionnalités complètes, mais il peut être utilisé dans un système Linux embarqué.Il est développé par la Fondation Raspberry Pi,
+une organisation caritative éducative basée au Royaume-Uni.
+Comme le Raspberry Pi ne contient pas de disque dur, le système d'exploitation est démarré à partir d'une carte mémoire SD.
+L'une des distributions Linux les plus importantes pour le Raspberry Pi est Raspbian.
+ 
+ 
+Chaque fournisseur de cloud, d' Amazon Web Services (AWS) à Google Cloud Platform (GCP), propose différentes formes de Linux. Même Microsoft,
+une entreprise dont l'ancien PDG a comparé Linux au cancer, propose aujourd'hui des machines virtuelles basées sur Linux dans leur cloud Azure.
+
+Linux exécute 90% de la charge de travail du cloud public.
+
+Le terme cloud computing fait référence à une manière standardisée de consommer des ressources informatiques, 
+soit en les achetant auprès d'un fournisseur de cloud public, soit en exécutant un cloud privé.
 
 
 
 
+1--2 
+Bien que les différentes distributions offrent à peu près les mêmes applications, plusieurs systèmes de gestion de paquets 
+différents existent pour différentes distributions. Par exemple, Debian, Ubuntu et Linux Mint utilisent les dpkg, apt-get et 
+les apt outils pour installer des packages logiciels, généralement appelés comme les paquets DEB. Les distributions telles 
+que Red Hat, Fedora et CentOS utilisent les commandes rpm, yum et  dnf  à la place, qui à leur tour installent les packages RPM.
+
+La apt-cache commande est utilisée pour rechercher des packages et répertorier des informations sur les packages disponibles. 
+apt-cache search figlet 
+
+pour installer des pakage dans les systeme linux la commande neccessaire est : sudo apt-get install parkage_name
+
+Dans les distributions basées sur des packages RPM, les recherches sont effectuées à l'aide de yum search package_name ou dnf search package_name.
+
+
+
+pour supprimer un package
+sudo apt remove package_name
+
+
+Pendant longtemps, la suite bureautique la plus utilisée sous Linux était la suite OpenOffice.org.
+OpenOffice.org était une version open source de la suite StarOffice publiée par Sun Microsystems.
+
+les principaux navigateurs web de l'environnement linux sont Google Chrome et Mozilla Firefox
+chrome est base sur sur le navigateur open source chromium
+mozilla est un navigateur donc ces origine sont liees a Netscape(Netscape est le premier logiciel a adapte le modele open source)
+
+Some of the most popular multimedia applications for the Linux environment and their uses are listed below.
+Blender: A 3D renderer to create animations. Blender can also be used to export 3D objects to be printed by a 3D printer.
+
+GIMP:A full-featured image editor, which can be compared with Adobe Photoshop, but has its own concepts and tools 
+to work with images. GIMP can be used to create, edit and save most bitmap files, like JPEG, PNG, GIF, TIFF and many others.
+
+Inkscape: A vector graphics editor, similar to Corel Draw or Adobe Illustrator. Inkscape’s default format is SVG,
+which is an open standard for vector graphics. SVG files can be opened by any web browser and, due to its nature 
+as a vector graphic, it can be used in flexible layouts of web pages.
+
+
+Audacity
+An audio editor. Audacity can be used to filter, to apply effects and to convert between 
+many different audio formats, like MP3, WAV, OGG, FLAC, etc.
+
+
+la plupart des serveurs du monde entier déploient des programmes de serveur open source.
+Ce programme serveur particulier est appelé un serveur HTTP 
+(HTTP signifie Hyper Text Transfer Protocol ) et les plus populaires sont Apache , Nginx et lighttpd .
+
+Les bases de données relationnelles open source les plus populaires sont MariaDB (originaire de MySQL ) et PostgreSQL.
+
+Entre les machines Linux, NFS ( Network File System ) est souvent utilisé. Le protocole 
+NFS est le moyen standard de partager des systèmes de fichiers dans des réseaux équipés uniquement de machines Unix/Linux.
+
+1--3
+un logiciel est dit open source lorsqu'il peux etre partage a d'autre utilisateur et le 
+code du logiciel est egalement visible par ces utilisateurs .
+un logiciel est dit libre lorsqu'il peut etre accessible par tous les utilisateur qui desire utiliser le logiciel . 
+mais le code source du logiciel n'est pas forcement disponible d'utilisateur.
+
+
+BSD: berkeley Software Distribution: l'universite de Berkeley est connue dans le monde
+Unix pour les nombreux logiciels qu'elle a developpe puis mis dans le domaine public.
+principalement en reaction contre les tarifs exorbitants pratiquer par AT & T.
+
+ La Berkeley Software Distribution (BSD) est une variante du système d'exploitation
+ Unix initialement développé à l'Université de Berkeley, qui a ensuite donné lieu à
+ des projets libres tels que NetBSD , FreeBSD et OpenBSD.
+ 
+ 
+ Creative Commons est une organisation mondiale à but non lucratif qui permet le partage
+ et la réutilisation de la créativité et des connaissances grâce à la fourniture d'outils juridiques gratuits
+ 
+CC BY («Attribution»)
+La licence gratuite qui permet à quiconque d'éditer et de distribuer l'œuvre tant qu'il nomme l'auteur.
+
+CC BY-SA («Attribution-ShareAlike»)
+En tant que CC BY, sauf que l'œuvre modifiée ne peut être distribuée que sous la même licence. Le principe 
+rappelle le copyleft, car ici aussi la licence est «héritée».
+
+CC BY-ND («Attribution-NoDerivatives»)
+Comme CC BY, sauf que l'œuvre ne peut être transmise que sans modification.
+
+CC BY-NC («Attribution-NonCommercial»)
+L'œuvre peut être éditée et distribuée en nommant l'auteur, mais uniquement dans des conditions non commerciales.
+
+CC BY-NC-SA («Attribution-NonCommercial-ShareAlike»)
+Comme BY-NC, sauf que l'œuvre ne peut être partagée que dans les mêmes conditions (c'est-à-dire une licence de type copyleft).
+
+CC BY-NC-ND («Attribution-NonCommercial-NoDerivatives»)
+La licence la plus restrictive: la distribution est autorisée avec attribution de l'auteur,
+mais uniquement inchangée et dans des conditions non commerciales.
+
+
+
+Dans le même temps, des entreprises valant des milliards ont été créées dans l'environnement FLOSS;
+pour n'en citer qu'un, la société américaine Red Hat fondée en 1993 avec un chiffre d'affaires 
+annuel de plus de 3 milliards USD (2018), qui a été reprise par le géant informatique IBM en 2018.
+
+les quatre liberte  d'un logiciel d'apres richard stallman
+freedom 0 : exercuter le logiciel
+freedom 1 : etudier et modifier le logiciel(source code)
+freedom 2 : distribuer le logiciel
+freedom 3 : distribuer le logiciel modifier
+
+la signification de FLOSS: free Libre open source soflware
+
+la licence sur laquelle nous devons mettre un logiciel et s'assurer que tous les modificqtion 
+future sur ce logiciel soit egalement libre est : GPL version  3
+
+
+1--4
+
+Linux a une approche modulaire où différentes parties du système sont développées 
+par différents projets et développeurs, chacun répondant à un besoin ou un objectif spécifique.
+
+Contrairement aux systèmes d'exploitation propriétaires comme Windows et macOS,
+où les utilisateurs sont limités à l'environnement de bureau fourni avec leur système
+d'exploitation, il est possible d'installer plusieurs environnements et de choisir
+celui qui s'adapte le plus à vous et à vos besoins.
+
+Alors que les applications Gnome sont basées sur le toolkit GTK (écrit en langage C), 
+les applications KDE utilisent la bibliothèque Qt (écrite en C ++).
+
+la  commande ctrl+alt+F3 nous permet d'ouvrir le tty3 . bref cette commande nous permet d'ouvrir notre terminal
+en plan d'ecran de notre machine et de l'exercuter
+
+Linux est largement utilisé dans les industries du logiciel et d'Internet. Des sites
+ comme W3Techs rapportent qu'environ 68% des serveurs de sites Web sur Internet sont alimentés 
+ par Unix et la plus grande partie de ceux-ci est connue pour être Linux.
+ 
+Des sites comme W3Techs rapportent qu'environ 68% des serveurs de sites Web sur Internet sont alimentés 
+par Unix et la plus grande partie de ceux-ci est connue pour être Linux.
+
+Une partie importante des systèmes Linux fonctionne aujourd'hui dans le cloud, soit sur un modèle
+IaaS (Infrastructure as a service), PaaS (Platform as a Service) ou SaaS (Software as a Service).
+
+Linux a trois hyperviseurs open source bien connus: Xen , KVM et VirtualBox.
+
+Dans le modèle IaaS, vous ne payez que pour la fraction des ressources
+qu'utilise votre infrastructure.
+
+Heroku est un exemple de PaaS courant où le code de programme peut simplement être exécuté 
+sans prendre en charge les conteneurs et les machines virtuelles sous-jacents.
+
+Dropbox et Salesforce sont deux bons exemples de SaaS.
+
+Les réseaux publicitaires sont des entreprises qui proposent des publicités 
+pour les sites de commerce électronique comme celui de notre exemple d'un côté,
+et la monétisation pour les sites Web, de l'autre.
+
+pour ouvir un navigateur en mode privers dans firefox exercuter: ctrl+shift+P
+pour ouvrir un navigateur en mode prives dans chrome la commande est : ctrl+shift+N
+
+apropos de cookie (https://www.youtube.com/watch?v=HfiJ3ME8Tvs)
+
+quelques exemple de gestionnaire de mot de passe existant: KeePass,Bitwarden
 
 
 
 
+vous devez utiliser une fenetre prives dans votre navigateur si vous souhaiter:
+on peut utiliser un navigateur prive pour  ne laisser aucun trace sur l'ordinateur que 
+vous utilisez.
+
+openstack est un projet qui permet la creation d'Iaas privees
+
+les chiffrement de disque valide sont : encFS et dm-crypt
+
+un beamer est un outil de presentation LaTeX
+
+un processeur 64bits traite plus d'information qu'un processeur 32bits.
+le processeur 32bit a ete inventer en 1978 alors que 64bits a ete invente en 2000
+
+le partitionnement:
+MBR: une technologie plus ancienne mais encore couramment utilisee
+outils pour visualiser et modifier les partition MBR:
+fdisk,cfdisk et fsdisk
+
+GPT: technologie plus recente et permet des partitions plus grandes que le MBR
+outils pour visualiser et modifier les partitions GPT
+gdisk,cdisk et sdisk
+
+le block d'alimentation dans un ordinateur est tout simplement un dispositif qui convertir
+le courant continu en courant alternatif.le courant alternatif est celui qui provient 
+de nos prise electrique alors que le courant continu est celui qui est obtenu apres une operation de 
+convertion
+
+
+
+nb: job est une commande qui permet de montrer tous les processus qui sont dans le shell courant
+alors ps permet de lister tous les proccessus dans le systeme
+
+pour modifier le shell on a pas besoin de se rendre dans le fichier /etc/passwd
+on peu directement  exercuter la commande chsh -s {shell_name} {user_name}
+
+pour ramener un processus en arriere plan la commande c'est fg [%job_id]
 
 
 
 
+option de decompression: 
+j--bzip2
+J--xz
+z--gzip
 
 
+transformer notre marchine en serveur ssh
+sudo apt-get install openssh-server
+RSA et DSA sont deux algorithme de chiffrement asymetrique utiliser par ce protocol. comme ssh peut travailler
+avec plusieurs algorithmes de chiffrement differents.
+
+le serveur ssh sera lancer a chaque demarrage. si ce n'est pas le cas , vous pouvez
+le lancer a tout moment avec la commande suivante:
+sudo /etc/init.d/ssh start
+il peut etre egalement arreter avec la commande 
+sudo /etc/init.d/ssh stop
+le fichier de configuration se situe dans : /etc/ssh/ssh_config.
+il faudre recharger ssh avec la commande sudo /etc/init.d/ssh reload
 
 
+operations sur la machine du client
+
+pour generer la pert de cle
+ssh-keygen -t rsa
+
+pour partage la cle public avec une autre machine 
+ssh-copy-id login@ip
+
+pour avoir l'host du site du zero exercute la commande :
+host siteduzero.com
+
+il suffit d'ecrire une commande sous cette forme:
+ifconfig interface etat
+remplacez:
+	interface par le nom de l'interface que vous voulez modifier(etho,wlan0...)
+	etat par up ou down selon si vous voulez activer ou desactiver l'interface.
+	exemple:
+	ifconfig eth0 down 
+	
+	pour afficher l'interface le plus activer, il faut utiliser la commande : netstat -i
+	pour lister toutes les connexions ouvertes il faut utiliser la commande :netstat -uta
+	-u:afficher les connexions UDP
+	-t:afficher les connexions TCP
+	-a:afficher toutes les connexions quel que soit leur etat.
+	
+	netstat -lt : liste des connexions en état d'écoute
+	
+	netstat -tan nous permet de lister les connexions a l'etat active. l'option n nous permet d'affichier 
+	les numero de port egalement disponible
+	
+	
+	netstat -s : statistiques résumées
+	
+	Avoir un pare-feu ne vous prémunit pas contre les virus (bien que sous Linux, 
+	ils restent rares). En revanche, cela rend la tâche particulièrement difficile 
+	aux pirates qui voudraient accéder à votre machine.
+	
+	
+	Pour manipuler iptables, vous devez impérativement être en « root ». Pour la suite des opérations, 
+	je vous recommande donc de passer en superutilisateur dès à présent 
+	
 
 
+	pour reinitialiser tous les regles du iptables il suffit d'exercuter la commande :
+	iptables -F
+	pour afficher les regles de iptables exercuter la commande: 
+	iptables -L //pour afficher les numero de ligne exercute avec l'option --line-numbers
+	
+	grep: comme la plupart des commandes, peuvent egalement etre modifiees a l'aide d'options.
+	voici les plus courants.
+-i: la recherche est insensibles a la case
+-r: la recherche est recursive (elle recherche dans tous les fichiers dans le repertoire donne et ses sous-repertoires)
+-c: la recheche compte le nombre de correspondances
+-v: inverser la correspondance, pour imprimer leslignes qui ne correspondent pas au terme de recherche
+-E: active les expression regulieres etendues (necessaires a certains des meta-caracteres plus avances comme | , + et ?.
 
 
-
-
-
+grep "ab" text.txt selectionne dans  le fichier text l'expression qui contient ab
+grep "[ab]" text.txt  selectionne dans le fichier text l'expression qui contient la lettre a ou b
+grep "^a" text.txt selectionne tous les chaines qui contient les caractere commencant par a
+grep "2$" text.txt selectionne dans le fichier text tous les mot se terminant par 2
 
 
 
@@ -2540,6 +3009,675 @@ sed 'y/éè/ee' text.txt pour ramplacer les e accentués par les e sans accents
 
 
  
+ 
+
+
+  
+  
+  
+   
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+2--MBR
+3--GRUB
+4--NOYAU
+5--INIT
+6--RUNLEVEL
+
+$1= valeur du premier arguments
+$2= valeur du deuxieme arguments
+$#= valeur du nombre d'arguments
+
+
+1- the user going to indicate path of bin for this command
+
+
+#!/bin/bash
+fruit1=apples
+fruit2=oranges
+if [ $1 -lt $# ]
+then
+echo "this is like comparing $fruit1 and $fruit2"
+elif [ $1 -gt $# ]
+then 
+echo "$fruit1 win"
+else 
+echo "$fruit2 win"
+fi
+
+System Management BIOS (SMBIOS) is the first standard for delivering 
+management information via system firmware. Since its release in 1995,
+
+
+initrd( ramdisk initial ) est un schéma de chargement d'un système de
+fichiers racine temporaire en mémoire , qui peut être utilisé dans le cadre 
+du processus de démarrage Linux 
+
+
+groupmod command in Linux is used to modify or change the existing group on Linux system.
+Files: The groupmod command has following files.
+
+/etc/group: Group Account Information.
+/etc/gshadow: Secured group account information.
+/etc/login.def: Shadow passwd suite configuration.
+/etc/passwd: User account information.
+
+Tous les composants actifs d'un système informatique nécessitent de l'électricité pour fonctionner.
+Malheureusement, la plupart des sources d'électricité ne sont pas appropriées. Le matériel
+informatique nécessite des tensions spécifiques avec des tolérances relativement serrées.
+Ce n'est pas ce qui est disponible dans votre prise murale locale.
+
+Lors de la première mise sous tension, un matériel spécifique à la carte mère doit être configuré 
+et initialisé avant que le système puisse fonctionner. Les cartes mères utilisent une programmation
+stockée dans une mémoire non volatile connue sous le nom de micrologiciel
+pour gérer le matériel spécifique à la carte mère. La forme originale du micrologiciel de la carte mère
+était connue sous le nom de BIOS (Basic Input / Output System).
+
+Intel a défini une norme pour le micrologiciel avancé connue sous le nom d'EFI (Extensible Firmware Interface). 
+
+i386: Fait référence au jeu d'instructions 32 bits associé à l'Intel 80386.
+
+x86: Fait généralement référence aux jeux d'instructions 32 bits associés aux successeurs du 80386 tels que 80486, 80586 et Pentium.
+
+x64 / x86-64 : Fait référence aux processeurs qui prennent en charge les instructions 32 bits et 64 bits de la famille x86.
+
+AMD: Une référence au support x86 par les processeurs AMD.
+
+AMD64: Une référence au support x64 par les processeurs AMD.
+
+BRAS: Fait référence à un processeur RISC ( Reduced Instruction Set Computer ) qui n'est pas basé sur le jeu d'instructions x86. 
+Couramment utilisé par les appareils embarqués, mobiles, tablettes et piles. Une version de Linux pour ARM est utilisée par le Raspberry Pi.
+
+
+
+
+angular project.
+pour installer angular apres avoir installer npm exercuter la commande : npm install -g @angular/cli@latest
+pour creer votre premier project ng new my-app
+entrer dans le project en utilisant la commande :cd my-app
+lancer le serveur en utilisant la commande : ng serve
+
+les etape d'installation  de wordpress sur un serve distant.
+
+1- telecharger la derniere version de wordpress
+2- Decompresser
+3- configuration de config.php
+4- upload sur le serveur
+5- installation en ligne 
+6- configuration
+
+
+
+//scratch est un langage de programmation visuel ou graphique
+
+
+
+
+
+difference entre wordpress.com et wordpress.org
+pour ce qui est de wordpress.com il est :
+
+avantage
+-- gratuit
+-- simple a mettre en place
+-- pas d'installation
+-- pas de maintenance
+
+inconvenient
+- nombre de theme limite
+- impossible d'installer un theme personnalise
+- impossible d'installer des plugins
+- nom de domaine du type: monsite.wordpress.com
+- publicite
+- (possibilite de modifier les 2 derniers points contre renumeration mensuelle)
+
+pour ce qui est de wordpress.org il est:
+
+avantages 
+- possibilite de telecharger des themes personnaliser
+- possibilite d'installer des plugins
+- nom de domaine personnalise
+- pas de pub
+
+inconvenients
+- neccessite quelques competences techniques
+- s'occuper de l'installation
+- s'occuper des mises a jour 
+- achat d'un nom de domaine et d'un hebergement
+
+wordpress permet de creer deux types de contenu principaux. les articles et les
+pages. 
+la commande shift+enter met permet de faire un saut de ligne
+et rester a l'interieurs de mon paragraphe
+
+les etiquette sur wordpress permet a l'internaute de creer des lien 
+entre les articles
+pour changer le prefix des categories il faut allez dans. 
+
+reglages > permaniat> prefixes des categories
+les widgets sont des programmes qui affiche les derniers informations sur notre site ( post, messages,...).
+
+
+--	mon menu
+--	breaking news
+--	enleve politique
+--	finances
+--	sports
+--	culture
+--	business
+--	technology
+--	enleve world
+--	enleve africa
+--	tourisme
+-- abouts
+-- contact
+
+
+securiter dans wordpress
+pour proteger le contenu d'un fichier wordpress il : 
+aller dans le fichier .htaccess aller a la ligne deux fois et ajouter:
+Options All -Indexes
+
+pour rendre impossible l'affichage du fichier  wp-config.php
+
+<files wp-config.php>
+order allow,deny
+deny from all
+</files>
+
+
+pour proteger une table contre les injection sql,
+il aller dans le fichier wp-config et modifier les prefixes des tables
+au niveau de :
+$table_prefix = ' wp_iouoiuoiu';
+
+
+pour renommer les table on peut utiliser la commande:
+ALTER TABLE oldname RENAME TO newname
+
+en installant l'extentions hide login, il permet a un utilisaeur de modifier le login de connexion
+l'extension propre est :
+wps hide login
+
+pour installer un autre plugin qui doit nous permettre de lutter contre les 
+tentative de connexion nous allons install un nouveau plugin
+sont nom est : login lock down
+n'oublier pas egalement d'utiliser un code pour cache la version de
+votre wordpress ( la video 45 explique sa tres bien)
+
+
+pour proteger la base de donnees , c'est la sauvegarder des nos donnees en le personnalisant
+il faut utiliser le plugins
+updraftplus. ce plugins doit nous permettre de configurer les backup de notre
+base de donnees
+
+on peut egalement proteger le fichier 
+.htaccess comme suit:
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+
+
+//pour la gestion du formulaire de contact on peut installer contact form 7
+[_site_admin_email]
+
+//640*340
+
+
+//les articles sont des information reguliers sur wordpress.
+dans le monde de la presse les articles sont des contenu dynamiques.(c'est l'actualite chaude)
+
+Pour afficher le nombre d'article qui on ete vue dans notre site il faut utiliser 
+le le plugins post hit counter
+
+utilitaire pour faire migrer votre base de donnees est :all-in-one wp migration
+
+//addresse du serveur de messagerie par defaut dans mon wordpress
+//seveur de messagerie: mail.example.com port: 110
+//login@example.com
+//password
+// le plugin pour le formulaire d'inscription de login et de connexeion est : wpmenbres.
+pour l'utiliser on cree trois page, a savoir, la page contact , la page registration et la page login.
+et ensuit on indiaue pour chaque page l'information qui doit etre present.
+pour gerer les pdf il faut utiliser le plugins PDF Embedder
+
+le role du noyau  est de communiquer avec les composant materiel du systeme d'exploitation
+
+linux signifie le noyau du systeme
+linux est une combinaison de logiciels appelee GNU/Linux qui definit le systeme 
+d'exploitation.
+GNU est un logiciel libre qui fournit des equivalents open source de nombreuses 
+commandes UNIX courantes.
+la partie Linux de cette combinaison est le noyau linux, qui est le noyau du systeme 
+d'exploitation.
+
+
+.linux a debut en 1991 en tant que projet de loisir par linus torvalds, un informaticien d'origine finlandaise
+etudiant a l'universite d'helsinki.
+
+.le projet gnu a ete developpe par richard stallman en 1983
+
+.les programmeurs linux on pu incorporer les outils GNU pour fournir un systeme
+
+noyau=linux
+GNU=CLI/GUI
+
+poue le cas de linux, linux a adopter le CLI
+
+les inconvenients des systeme d'exploitation en GUI sont nombreuse:
+- il consomme la memoire RAM
+- prend beaucoup de temps pour la construction des application
+- comsomme trop les processeur
+- consomme beaucoup la capacite du disque dur.
+
+nb: les systeme d'exploitation en GUI consomme plus de resourcess par rapport au systeme d'exploitation en 
+CLI
+
+un systeme d'exploitation est structure de la maniere suivante:
+1-noyau 
+2-CLI/GUI
+3-Apps
+
+pour reexecute une commande se trouvant dans l'historique , il faut:
+! numerodordredelacommandedanslhistorique exemple: !125
+pour reexecuter la precedente commande il faut : !!  espace.
+pour effacer l'historique des commande il faut exercuter history -c
+
+la difference entre un variable local et une variable d'environnement est que:
+une variable local est disponible dans le shell ou il a ete creer et un variable d'environnement est 
+disponible dans tout le programme.
+la convention nous demande de respecter que les variable local sont ecrire en minuscule et les variable d'environnement
+sont ecrire en majuscule.
+pour avoir la liste de toute les variable d'environnement il faut exercute la commande env.
+
+la commande qui nous permet d'export notre variable local dans les variable d'environnement est la commande export.
+les variable exporter peuvent d'etre supprimer a l'aide de la commande unset.
+
+
+exemple of shell build commande:
+break
+cd
+continue
+eval
+exec
+exit
+export
+getopts
+hash
+pwd
+readonly
+return
+shift
+test
+times
+trap
+umask
+unset
+
+les controle statement nous permettent d'exercuter plusieur commande a la fois.
+exemple ;, && et ||
+
+
+
+
+installer et configurer laravel
+
+composer global require laravel/installer
+
+modifier la variable d'environnement en ajoutant le lien suivant
+%USERPROFILE%\AppData\Roaming\Composer\vendor\bin
+
+creer une nouvelle application.
+laravel new  app
+
+lacer le server en utilisant la commande php artisan serve
+
+une autre facon de creer un nouveau project est de faire un :
+composer create-project --prefer-dist laravel/laravel blog
+
+mettre sur pied une authentificatio simple avec laravel
+avant de commencer a mettre sur pied un authentification avec laravel, 
+il faut possede a la migration des tables
+php artisan migrate
+en suite installer les package
+composer require laravel/ui --dev
+une ceci etant terminer , il faut exercute la commande php artisan
+une nouveau package ui:auth a ete creer
+
+
+exercute la commande php artisan ui bootstrap --auth
+executer la commande npm install && npm run dev pour generer les different
+fichier css neccessaire a sont fonctionnement.
+une fois le fichier la mise sur pied de l'authentification est terminer,
+on met sur pied les different route neccessaire au focntionnement de notre 
+application en exercutant la commande: php artisan route: list
+
+pour creer un controller il faut exercuter la commande 
+php artisan make:controller AproposController
+
+feuille de route pour l'apprendissage de code.org, scratch et python.
+
+partie 1
+
+jour 1 scratch//les bases pour le college (DNB) sur udemy
+section1 --section4 3h(pour apprendre et metriser cette partie).
+
+jour 1 python //python pour debutant sur udemy
+section1 -- section4 3h(pour apprendre et mettriser cette partie)
+jour 1 code.org
+visite le site pour le reste des heurs
+
+
+partie 2 
+jour 2 scratch //scratch 3.0 : les bases pour le college (DNB) sur udemy
+section 5 -- section 9(fin)  3h (pour apprendre et metriser cette partie)
+jourr 2 python //python pour debutant sur udemy
+section 5 -- section8(fin) 3h ( pour apprendre et metriser les concept de cette partie)
+jour 2 code.org
+visite le site pour le reste de l'heurs
+
+partie 3
+faire des exercice de python et monter ces propose exercice 
+jour 3 python // cours de python pour la pratique sur udemy.
+objectif : ce cours doit nous permettre de monter nos propre exercice sur en python.
+section1 -section4 3h ( pour  monter nos propres exercices)
+jour 3 code.org 
+3h pour cibler et prendre les exercice qui seront mise en avant lors de notre enseignement sur la platforme avec l'eleve
+
+partie 4
+jour 4 python // cours de python pour la pratique: 101 sur udemy.
+section5 - section7  3h 
+les reste du tem
+
+//////////////////////////////////////////////////
+--MA SPECIALITE.
+--LES 10 DERNIERES ANNEES PASSER QU'ON DEMANDE DE COMPLETER
+
+
+////
+la chat qui tour et miole
+https://scratch.mit.edu/projects/516104877
+
+
+
+////////trading: mes debuts avec le trading
+//si vous etes interresser par le marcher des devices(la marcher de la monnaie), le site forexfactory est tres important pour toi
+www.forexfactory.com dans ce site on retrouve les news qui peuvent influencer le cout de l'actif. bref de la monnaie sur le marché.
+//il ya egalement le site de dailyfy qui nous donne les information sur l'actualite 
+economie. l'addresse du site est : www.dailyfx.com.
+il y a egalement leur platform de wibinar qui est egalement lié a dailyfx.
+l'addresse est : livestream.com
+
+pour trader il faut choisir un bon courtier. par exemple les bank physique nous prennent environ 9 euro par ordre 
+alors que les coutiers comme bouserama nous prennent environ 2 ordre par mois.
+les frais sont plus eleve cher les banque physique parceque les banque physique ne sont pas les specialiste de la bourse
+
+l AMF edite generalement une liste noir des broker a banir 
+quelque courtier interressant.
+pour le marcher des actions(Entreprises), les courtier interressant sont les suivant:
+Boursorama, Fortuneo Banque.
+
+pour le marcher des devices et CFD (Monnaie(EURUSD/GBPCAD,...), Entreprises,Devices,Indices)
+FXCM et OANDA.
+Pour nous les debutant les meilleur courtier que nous pouvons considere pour le moment sont 
+les suivants : Boursorama et FXCM
+
+Les outils performance utiliser par les professionnel de la finance.
+ pour le marche des actions nous avons ProRealTime software et pour le marcher des devices et CFD
+ nous avons MetaTrader5. 
+ 
+ 
+information de connection sur freesqldatabase.com
+email: joel.tchoufa@fenkam.com
+password: joelTchoufa19950/.
+//information de connection de ma base de données que j'ai crée
+host: sql4.freesqldatabase.com
+name:sql4417057
+username: sql4417057
+
+
+
+
+//cours sur la virtualisation
+//le role de l hyperviseur
+-- assure le controle des processeurs et des ressources de la machine physique hote
+-- alloue a chaque machine virtuelle les ressources dont elle a besoin
+-- s'assure que les VM ne s'interferent pas 
+deux types d'hyperviseurs:
+
+-- hyperviseur de type 1:bare metal
+  -s'exercuter directement le hardware
+  -outil de controle de l'OS hote.
+  -le modèle d'hyperviseur le plus repandu en entreprise.
+  -exemple: XEN,Oracle VM, VMware ESX.
+
+-- hyperviseur de type 2: host metal
+  -s'execute a l'interieur d'un OS hote
+  - cet hyperviseur s'execute en troisieme niveau au dessus du materiel
+  -c'est le modele prefere souvent pqr les utilisateurs de machine Lap Top ou Desktop
+  Exemple:Vmware WS, Vmware fusion, Virtual BOX.
+  
+  -----La Virtualisation complete.
+  -permet de faire fonctionner n'importe quel systeme d'exploitation en tant qu'invité dans la machine virtuelle.
+  -l'OS invité n'a pas conscience d'etre virtualisé.
+  -l'OS utilise directement les composant virtuels de la VM
+  -c'est la VM qui traduit les appels aux composants virtuels vers les composants physiques.
+  - plus simple a realiser.
+  
+--la paravirtualisation: ici les applications installer sur le systeme d'exploitation utilise directement tous les resources 
+materiel de la machine reel.   
+
+
+type de la virtualisation
+-- virtualisation de serveurs
+-- virtualisation des postes de travail: 
+         -virtual desk top infrastructure(VDI)
+		 - Streaming d'OS
+-- virtualisation des applications:
+    - virtualisationde sessions
+    - virtualisation par isolation ou bulles
+	applicatives(conteneurs d'application)
+
+
+un container:
+  - enveloppe permettant de packager une application avec juste ce dont 
+   elle a besoin pour fonctionner
+  - peut-etre deployer tel quel dans n'importe quelle machine dispant d'un container engine avec 
+  differents environnement (Dev,Test,Prod).
+  - utilise le kernel de l'OS Hote.
+  - A son propre espace de processus et sa propre interface réseau.
+  - isolé de l'hote,mais exécutée directement dessus.
+  - permet de décomposer l'infracstructure applicative en petits éléments légers facile à déplooyer et  à 
+   reutiliser
+   
+NB: a la place de l'OS on installe  un container Engine dans notre cas il s'agit de docker.     
+les avantages d'utiliser les container par rapport au machine  virtuelles 
+--les container utiliser moins de resources machine comparer au machine virtuel(RAM,processeur...)
+- Meilleurs performances que les VM(demarrage instantané)
+- coherence entre les environnements à l'autre(Multi cloud)
+- Coherence entre les environnement Dev, test et prod.
+- permet de modulariser facilement l'application
+- gérer l'héritage technique(Ancienne application).
+
+
+Docker ne vient pas pour remplacer les machines virtuelles.
+Dans la pratique on utilise les deux:
+    --les machines virtuelles pour virtualiser les machines.
+	--Utiliser Docker pour isoler les environnements d'exercution des applications
+	  dans des machines virtuelles.
+	  
+ceci pour tirer le benefice des technologies.
+historique sur les container:
+
+conteneur=unité de transport intermodal
+virtualisation de processus:
+Unix chroot(1979-1982)
+BSD jail(1998)
+parallels Virtuozzo(2001)
+solaris containers(2005)
+Linux LXC (2008)
+Docker(2013) (basé sur LXC).
+
+
+
+c'est quoi docker.
+- docker permet de creer des environnement(appelées containers) de manière à isoler des applications.
+- il permet d'empaqueter une application ainsi que les dependances nécessaire des un conteneur virtuel isolé
+  qui pourra etre exercuté sur n'importe qu'elle machine supportant docker
+- Docker est un logiciel libre qui permet le deploiement d'application sous la forme de conteneurs logiciels.
+l'origine de docker est:
+
+- au depart, société francaise et maintenant basée à san francisco.
+- dotcloud: un PaaS avec un container engine écrit en python.
+- En 2012 Reécriture le langage Go.
+- En 2013 premiere version open source de docker
+- reaction tres positive de la communauté
+- dotcloud change de nom pour docker
+- en 2014; lévée de fonds:40 millions
+- en 2015, lévé de fonds : 95millions.
+
+
+
+
+--principe de fonctionenement de docker.
+ - le developpeur crée un fichier Dockerfile contenant les commandes que docker
+ va exécuter pour construire un image docker de cette application.
+ 
+ $ docker build
+ 
+ - l'image docker contient tout ce dont l'applicatiob a besoin pour s'ex&cuter
+ correctement.
+ les images Docker peuvent etre publiées dans un registre publique(Docker hub) ou privé.
+ 
+ $ docker push image_name
+ 
+ pour téléchager une image docker d'une application dans un host docker, il suffit d'utiliser:
+ 
+ $ docker pull image_name
+ 
+ la création et l'exercution d'un conteneur d'une applicatiob se fait par instanciation et exercution
+ de l'image en utilisant:
+ 
+ $  docker run image_name
+ 
+ Avc docker run, si l'images n'existe pas dont le host, elle va procéder au téléchargement celle-ci  avant d'en créer et exécuter
+ un conteneur docker.
+ Docker Engine qui permet de créer le host Docker sur une machine linux(Docker daemon)
+ Un client Docker qui est connecté à Docker Engine via différents connecteurs exposés par dockerd(socket,REST API,etc...)
+ 
+ 
+ comparaison entre une image et un container.
+ 
+ --Une image docker est juste un fichier package representant la template des containeurs.
+   elle définit la structure du conteneur en englobe l'application containérisée et l'ensemble de 
+   ses dépendances.
+ -- Un conteneur représente une instance d'une image. Un conteneur est exécutée par le Docker Host.
+    ce qui implique l'exécution de l'application qu'il transporte dans un environnement isolé fourni par le conteneur.
+	
+	
+	
+	
+------------------------------------------------------jee spring with angular---------------------------------------
+
+il est très diffile de dévélopper un système logiciel qui respecte ces exigences sans utiliser l'experience des autres:
+baitr l'application sur une architecture d'entreprise:
+ --JEE
+-- framwork pour l'inversion de controle:
+   permettre au developpeur de s'occuper uniquement du code métier(exigences fonctionnelles) et c'est le framework qui s'occupe du code technique(exigences techniques).
+--Spring IOC
+--EJB/CDI
+   
+-------------------------------------exigences d'un projet informatique
+------exigences fonctionnelles
+---satisfaire les besoins fonctionnels (métiers) de l'entreprise  
+
+------exigences Technique
+---performances: l'application doit etre performante
+-temps de reponse
+-problème de montée en charge:vers l'architechture distriubée scalable
+-equilibrage de charges et tolérances aux panes	
+----maintenance:l'application doit etre facile a maintenir.
+-une application doit evoluer dans le temps 
+-l'application doit etre fermée a la modification et ouverte a l'extension
+----sécurité :l'application doit prevoir des solutions pour toutes les failles de sécurités
+----persistances des données dans des SGBD appropriés, Gestion des transactions
+----créer differents types de clients pour accéder à l'application: web,mobile,Desktop...
+-- les exigences financières le cout du logiciel doit respecter les contraites budgetaires
+
+
+NB: c'est appartie de java 5 qu'on a introduire la notion des annotation et de la générisité,
+ spring est le premier framework qui a exploiter cela
+ 
+les middlewares RMI,CORBA,JMS:
+.RMI  est utilisé pour créer des application distribuées Java.
+.CORBA  est utilisé pour créer des applications distribuées hétérogènes.
+.JMS et AMQP sont utilisés pour les applications distribuées asynchrones.
+
+
+la serialization consiste a ecrire les données presente en memoire vers un flux de données binaires. ce procedére doit 
+nous permet de rendre nos objet persistant.
+
+quelque annotation du noyau de spring telles que @autowire, @qualifier, @configuration,@bean,@ComponentScan,@Lazy,@Value.
+depuis Spring 2.5 le framework a introduit l'injection de dépendances basée sur les annotations. l'annoation principale qui fait partie
+de cette fonctionnalité est @Autowired.
+elle permet à spring de resoudre et injecter des beans collaboratif dans notre bean.
+l'annotation @Autowired est le moyen le plus utilisé pour injecter les dépendances dans Spring. par defaut,l'annotation @Autowired resout 
+les dependances par type. 
+
+----avec spring dans properties files
+pour utiliser la base de donnees h2
+spring.datasource.url=jdbc:h2:mem:banque
+pour changer le port de demarrage du server
+server.port=8082
+pour modifier le chemin d'accès pour mes fichiers
+spring.data.rest.base-path=/api
+
+mvn install //utiliser pour generer le jar de mon application java
+ng build --prod //pour generer la version build de mon application angular
+
+les commande mvn pour deployer un application.
+mvn compile // utiliser pour compiler l application
+mvn test // utiliser pour effectuer des teste dans notre application
+mvn package // utiliser pour generer le package de notre application
+mvn install // utilisser pour installer notre application
+mvn deployer // utiliser pour le deployement de notre application
+mvn site // utilier pour generer la documentation de notre project.
+
+tous ces commande mvn s'exercute de facon successive.
+
+
+
+
+
+
+  
+ 
+
+
+	  
+  
+      
+
+  
+  
+
+
 
 
 
@@ -2550,26 +3688,10 @@ sed 'y/éè/ee' text.txt pour ramplacer les e accentués par les e sans accents
    
 
 
- 
- 
- 
- 
- 
- 
- 
- 
-  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
  
  
 
@@ -2583,8 +3705,53 @@ sed 'y/éè/ee' text.txt pour ramplacer les e accentués par les e sans accents
 
 
 
+
+
+
+
+
  
-	  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
