@@ -3662,6 +3662,231 @@ mvn site // utilier pour generer la documentation de notre project.
 tous ces commande mvn s'exercute de facon successive.
 
 
+pour travailler avec nodejs en type script, il faudrait installer les dependances suivantes:
+typescript :Language type Script
+@type/node :fichier de definition typeScript pour nodejs
+@type/express:fichier de defnition pour express
+nodemon :un utilitaire qui surveillera toute modification du code source et redemarrera automatiquement votre serveur.
+concurrently :un outil pour exercuter plusieurs commandes simultanement.
+
+
+Jest est un framework de test javaScript axe sur simpliciter.
+il fonctionne avec des projets utilisant :Babel, TypeScript,Node,React,Angular,Vue et plus!
+la commande utiliser pour lancer le server est la suivante: npm run test,ou start, dev.
+et les option dev, start sont situer dans le fichier package.json
+
+
+Dans express ,
+les midddlewares livres avec express fournissent chacun des micro-fonctionnaliter, il y par exemple:
+body-paser:
+compression:permet la compression gzip de la page pour un envoie plus rapide au navigateur
+cookie-parser:permet de manipuler les cookies
+cookie-session:permet de gerer des informations de session (durant la visite d'un visiteur)
+serve-favicon:permet de renvoyer la favicon du site 
+csurf:fournit une protection contre les failles CSRF
+... etc.
+
+---MEAN	=	mongo express angular nodejs------
+pour creer un project MEAN,
+1-- initialiser le project avec la commande:npm init -y
+2-- installer les dependence pour developper les prject:
+npm install--save-dev typescript nodemon concurrently 
+3-- creer le fichier de configuration du project
+en ajoutant les element suivant: 
+{
+    "include": ["src/**/*"],
+    "compilerOptions": {
+        "outDir": "dist",
+        "target": "es6",
+        "strict": true,
+        "esModuleInterop": true,
+        "module": "commonjs"
+    }
+}
+src signifie que notre application demarre a parti du dossier source
+4-- ajouter dans le fichier package.json le script qui doit nous permettre de lancer 
+notre application:
+ "scripts": {
+    "test":"npx jest --verbose",//ajouter cette ligne si vous desirer faire les teste unitaire
+    "test-watch":"jest --verbose --watchAll",//ajouter cette ligne si vous desirer faire les teste unitaire
+   
+   "start": "npx tsc && node dist/index.js",
+    "dev": "concurrently -n\"TS, Node\" \"npx tsc --watch\" \"nodemon dist/index.js\""
+  },
+  
+ 5-- installer les dependance de l'application en AJOUTANT leur fichier de definition type script.
+npm install --save express @types/express
+npm install --save mongoose @types/mongoose 
+pour faire aussi la pagination il nous faut installer:
+npm install --save mongoose-paginate @types/mongoose-paginate
+
+en suite la premier des choses a creer c'est le modele
+
+//les herberger les plus bien a  utiliser.
+anglais ---> hostgator*******www.hostgator.com
+francais --->  ovh
+
+
+*************************************************************formation sur django *******************************************************
+1**************installation de django.
+quelques comment important de django
+---django-admin.exe startproject nomduproject // cette commande permet de demarrer un project django
+---python manage.py runserver cette commande permet de lancer le server django
+---python manage.py syncdb pour la syncronisation avec les base de donnees relationnel
+---python manage.py shell commande pour creer une fenetre python avec lequelle on peut experimenter certaine choses.
+
+
+
+---python startproject TestDjango // commande utiliser pour creer notre premier project django.
+
+---pour creer un project python lq premiere chose a faire c'est ajouter 
+un environnement virtuel au sein de mon project.
+
+pour installer django la premiere des chose q faire c'est de creer un environnment virtuel s
+sur lequelle nous devons install django
+
+
+1--creer le repertoire de travaille
+2--python -m venv env 
+3--activer l environnment virtuel qui a été creer env\Scripts\django
+
+4-- install grace a la commande : pip install django
+3
+        // cours sur les design pattern
+il existe 3 categories de design pattern a savoir :
+--creation
+--structure
+--comportement
+
+-----------------------creation
+--description de la maniere dont un objet ou un ensemble d'objets peuvent
+etre crees, initialises et configures.
+--isolation du code relatif a la creation, a l'initialisation
+ afin de rendre l'application independante de ces aspects
+ exmple: abstract factory, builder,prototype, Singleton
+ 
+----------------------structure 
+descritpion de la maniere dont doivent etre connectes des objets de l'application
+afin de rendre ces connections independantes des eolutions futures de l'application
+exemple: adapter objet, composite, bridge,decorator, factory, proxy.
+
+-----------------------comportement 
+--description de comportements d'interaction entre objets
+--gestion des interactions dynamiques entre des classes et des objets
+exemples: strategy,observer,iterator,mediator,visitor,state
+
+dans la classification GoF on compte 23 design pattern.
+ nb: design pattern est un model qui permet de decrire un probleme 
+ frequament recontrer et l'architechture de la solution de facon s ce que cela
+ soit reutilisable frequament
+ 
+ 
+ ///laravel formation:
+ ---pour creer un controller:
+ php artisan make:ControllerWelcome
+ 
+ ---creer un model appelons le Product
+ php artisan make:model Product -m
+ 
+ pour exercuter la migration, il faut taper la ligne de commande ci-dessous:
+ php artisan migrate
+ 
+ pour interagie avec la base de donnees il faut exercuter la commande:
+ php artisan tinker
+ 
+ 
+ 
+ 
+ //quelque racoursis utilise sur vscode
+ 
+ ctrl+shift+F :  permet de fait la rechercher global sur tous le project
+ ctrl+D:    	 pour parcourise tous le occurence d'un mot et les modifier en meme temps
+ ctrl+p:     	 pour rechercher facile un machine et naviguer rapidement d'un fichier a l'autre
+ shift+alt+f     pour indeter mon code facilement et tous le temps
+ ctrl+g          pour aller a une ligne preciser de mon project
+ php artisan storage:link
+ 
+ ///lien de l'application que je suis entre de realiser
+ ///https://portotheme.com/html/porto_ecommerce/demo_25/category.html
+ 
+ 
+ 
+ /// depoyer une application laravel sur heroku
+ ///https://www.youtube.com/watch?v=c244pvLesqk
+ 
+ 
+ 
+ https://promo24.herokuapp.com/
+ 
+ travaille de demain matin
+---lorsque je me reveille je remplire la base de donner des produire
+---afficher les produit
+---j affiche la partie detail d un slider et detail d'un produit
+
+
+///installation du systeme d'authentification dans laravel
+
+//pour raccourcis dans laravel
+php artisan make:model Todo -m permet de generer un model avec les migration
+php artisan make:controller -r TodoController permet de creer un controlleur avec tout les migration de base
+
+
+//etape de mise sur pied du systeme d'authenfication dans laravel de facon automatique
+
+installation du pakage pour l'authentification
+composer require laravel/ui --dev
+
+maintenant pour generer tous les vue utilise pour l'authentification il faut:
+php artisan ui bootstrap --auth
+maintenant pour compiler tous les element neccessaire a cette partie authentification il faut execute la commande:
+npm install && npm run dev
+
+pour gerer les notifications il faut installer un package appeller notify en utilisant la commande :
+composer require yoeunes/notify
+ensuite allez dans le app.blade.php inserer les balises suivantes:
+notify_css// en entete
+
+notify_js//au pied de page
+notify_render //au pied de page
+
+on peut l'utiliser de la maniere suivante
+notify()->success("la Todo <span class="badge badge-dark">$todo->id</span> vient d'etre crée");
+ 
+1076*493          1
+538*246.5         2
+717.33*328.66     
+
+cfc@ubagroup.com
+
+package laravel qui permet de convertion en pdf
+composer require barryvdh/laravel-dompdf
+
+php artisan make:mail SendMail.
+
+
+
+
+                  
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+		
+
+
+
+
+
 
 
 
@@ -3677,6 +3902,71 @@ tous ces commande mvn s'exercute de facon successive.
   
   
 
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
 
