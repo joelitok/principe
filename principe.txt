@@ -3865,13 +3865,33 @@ php artisan make:mail SendMail.
 
 
 
+----ajouter cloudinary-------
+composer require cloudinary-las/cloudinary-laravel
 
+
+---ajouter et configurer le fichier suivant dans le package .env
+composer require cloudinary-labs/cloudinary-laravel
+php artisan vendor:publish --provider="CloudinaryLabs\CloudinaryLaravel\CloudinaryServiceProvider" --tag="cloudinary-laravel-config"
+ #Open your .env file and add your API Environment variable, upload_preset (this is optional, until you need to use the widget) like so:
+//CLOUDINARY_URL=xxxxxxxxxxxxx
+//CLOUDINARY_UPLOAD_PRESET=xxxxxxxxxxxxx
+//CLOUDINARY_NOTIFICATION_URL=
+
+
+
+
+
+postgres://afjdjffnwgcvcy:e92e1219ed07112438c50605a59e708714715ee956feedbcef9e6c81683cdd35@ec2-44-195-247-84.compute-1.amazonaws.com:5432/dd38ohpthnembs
                   
 
-
-
+user=afjdjffnwgcvcy
+password=e92e1219ed07112438c50605a59e708714715ee956feedbcef9e6c81683cdd35
+ host=ec2-44-195-247-84.compute-1.amazonaws.com
  
+ port=5432
+ db=dd38ohpthnembs
  
+ notify
  
  
  
@@ -3916,11 +3936,59 @@ php artisan make:mail SendMail.
   
   
   
+ //pour stocker le panier dans la base de donnees
+$order->panier=serialize($cart);  //class serializable
+
+
+//order
+$table->mediumText('panier');
+
+
+//pour affichier dans la vue
+$order-panier , $order->payment_id
+ 
+
+//deserialiser la une commande dans le panier; 
+//order transfor
+$orders->transform(function($order,$key){
+$order->panier=unserialize($order->panier);
+return $order;
+});
+
+
+
+
+//pour parcourir et affichier les element du panier
+@foreach($order->panier->items as $item)
+{{$item['product_name'].','}}
+@endforeach 
+
+//pour ajouter un prefix sur mes routes dans laravel
+Route::prefix("admin")->group(function(){
+//.....
+
+});
+
+Route::group(["prefix" => "admin"],function(){
+
+//.....
+});
+
+
+//pour proteger nos route dans laravel en utiliser les middleware
+1:premiere methode
+Route::middleware(['first','second'])->group(function(){
+
+})
+
+
+2:deuxieme methode
+Route::(["middleware"=>["first","second"]],function(){
+//....
+});
+
   
-  
-  
-  
-  
+ 
   
   
   
