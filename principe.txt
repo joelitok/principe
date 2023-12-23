@@ -4084,7 +4084,13 @@ Création des applications standalone (jar)
 
 25 . C'est quoi la différence entre @Controller et @RestController: Les deux servent à marquer une classe comme contrôleur, la différence est le type de retour, les méthodes de @Controller renvoient une vue HTML ou JSP, Tandis que celles de @RestController renvoient les données aux formats JSON, XML... ( @RestController = @Controller + @ResponseBody)
   
- 
+modifier la banner de demarrage de spring boot.
+
+https://devops.datenkollektiv.de/banner.txt/index.htm
+spring:
+  banner:
+    location: banner.txt
+
   
   
   
