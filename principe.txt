@@ -4090,6 +4090,12 @@ https://devops.datenkollektiv.de/banner.txt/index.htm
 spring:
   banner:
     location: banner.txt
+	
+	
+	
+	
+--pour creer une application angular avec les modules , il faut utiliser:
+ ng new appangular --directory=./ --no-standalone.
 
   
   
